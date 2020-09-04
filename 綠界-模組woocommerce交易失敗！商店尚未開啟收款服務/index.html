@@ -21,22 +21,23 @@
     var CONFIG = {"hostname":"ecpay0401.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="電子發票API兩版本差異參考：">
+  <meta name="description" content="此錯誤顯示您的『模式』與設定的『MerchantID、HashKey、HashIV』搭配有誤，請參考下述調整。 測試模式必須使用測試專用的MerchantID、HashKey、HashIV，並勾選測試模式，才能順利建立訂單。 正式模式必須使用正式申請的MerchantID、HashKey、HashIV，並取消勾選測試模式，才能順利建立訂單">
 <meta property="og:type" content="article">
-<meta property="og:title" content="綠界 電子發票-檢查碼版和JSON版API差異">
-<meta property="og:url" content="https://ecpay0401.github.io/%E7%B6%A0%E7%95%8C-%E9%9B%BB%E5%AD%90%E7%99%BC%E7%A5%A8-%E6%AA%A2%E6%9F%A5%E7%A2%BC%E7%89%88%E5%92%8CJSON%E7%89%88API%E5%B7%AE%E7%95%B0/index.html">
+<meta property="og:title" content="綠界 模組woocommerce交易失敗！商店尚未開啟收款服務">
+<meta property="og:url" content="https://ecpay0401.github.io/%E7%B6%A0%E7%95%8C-%E6%A8%A1%E7%B5%84woocommerce%E4%BA%A4%E6%98%93%E5%A4%B1%E6%95%97%EF%BC%81%E5%95%86%E5%BA%97%E5%B0%9A%E6%9C%AA%E9%96%8B%E5%95%9F%E6%94%B6%E6%AC%BE%E6%9C%8D%E5%8B%99/index.html">
 <meta property="og:site_name" content="ECpay">
-<meta property="og:description" content="電子發票API兩版本差異參考：">
+<meta property="og:description" content="此錯誤顯示您的『模式』與設定的『MerchantID、HashKey、HashIV』搭配有誤，請參考下述調整。 測試模式必須使用測試專用的MerchantID、HashKey、HashIV，並勾選測試模式，才能順利建立訂單。 正式模式必須使用正式申請的MerchantID、HashKey、HashIV，並取消勾選測試模式，才能順利建立訂單">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://i.imgur.com/0XdFEQm.jpg">
-<meta property="article:published_time" content="2020-09-04T05:30:53.000Z">
-<meta property="article:modified_time" content="2020-09-04T05:33:16.875Z">
+<meta property="og:image" content="https://www.ecpay.com.tw/Upload/Announce/201805/images/17a8a20180517101405.jpg">
+<meta property="og:image" content="https://www.ecpay.com.tw/Upload/Announce/201805/images/a9dde20180517101531.jpg">
+<meta property="article:published_time" content="2020-09-04T08:43:47.000Z">
+<meta property="article:modified_time" content="2020-09-04T08:47:16.855Z">
 <meta property="article:author" content="Athena Y">
 <meta property="article:tag" content="綠界-電子地圖無法顯示,綠界-物流-找不到加密金鑰原因,綠界-金流-AIO出現MerchantID-is-Null">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.imgur.com/0XdFEQm.jpg">
+<meta name="twitter:image" content="https://www.ecpay.com.tw/Upload/Announce/201805/images/17a8a20180517101405.jpg">
 
-<link rel="canonical" href="https://ecpay0401.github.io/%E7%B6%A0%E7%95%8C-%E9%9B%BB%E5%AD%90%E7%99%BC%E7%A5%A8-%E6%AA%A2%E6%9F%A5%E7%A2%BC%E7%89%88%E5%92%8CJSON%E7%89%88API%E5%B7%AE%E7%95%B0/">
+<link rel="canonical" href="https://ecpay0401.github.io/%E7%B6%A0%E7%95%8C-%E6%A8%A1%E7%B5%84woocommerce%E4%BA%A4%E6%98%93%E5%A4%B1%E6%95%97%EF%BC%81%E5%95%86%E5%BA%97%E5%B0%9A%E6%9C%AA%E9%96%8B%E5%95%9F%E6%94%B6%E6%AC%BE%E6%9C%8D%E5%8B%99/">
 
 
 <script id="page-configurations">
@@ -49,7 +50,7 @@
   };
 </script>
 
-  <title>綠界 電子發票-檢查碼版和JSON版API差異 | ECpay</title>
+  <title>綠界 模組woocommerce交易失敗！商店尚未開啟收款服務 | ECpay</title>
   
 
 
@@ -165,7 +166,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://ecpay0401.github.io/%E7%B6%A0%E7%95%8C-%E9%9B%BB%E5%AD%90%E7%99%BC%E7%A5%A8-%E6%AA%A2%E6%9F%A5%E7%A2%BC%E7%89%88%E5%92%8CJSON%E7%89%88API%E5%B7%AE%E7%95%B0/">
+    <link itemprop="mainEntityOfPage" href="https://ecpay0401.github.io/%E7%B6%A0%E7%95%8C-%E6%A8%A1%E7%B5%84woocommerce%E4%BA%A4%E6%98%93%E5%A4%B1%E6%95%97%EF%BC%81%E5%95%86%E5%BA%97%E5%B0%9A%E6%9C%AA%E9%96%8B%E5%95%9F%E6%94%B6%E6%AC%BE%E6%9C%8D%E5%8B%99/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -178,7 +179,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          綠界 電子發票-檢查碼版和JSON版API差異
+          綠界 模組woocommerce交易失敗！商店尚未開啟收款服務
         </h1>
 
         <div class="post-meta">
@@ -189,7 +190,7 @@
               <span class="post-meta-item-text">發表於</span>
               
 
-              <time title="創建時間：2020-09-04 13:30:53 / 修改時間：13:33:16" itemprop="dateCreated datePublished" datetime="2020-09-04T13:30:53+08:00">2020-09-04</time>
+              <time title="創建時間：2020-09-04 16:43:47 / 修改時間：16:47:16" itemprop="dateCreated datePublished" datetime="2020-09-04T16:43:47+08:00">2020-09-04</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -197,7 +198,7 @@
               </span>
               <span class="post-meta-item-text">分類於</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%9B%BB%E5%AD%90%E7%99%BC%E7%A5%A8/" itemprop="url" rel="index"><span itemprop="name">電子發票</span></a>
+                  <a href="/categories/%E6%A8%A1%E7%B5%84/" itemprop="url" rel="index"><span itemprop="name">模組</span></a>
                 </span>
             </span>
 
@@ -212,7 +213,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>電子發票API兩版本差異參考：<br><img src="https://i.imgur.com/0XdFEQm.jpg"></p>
+        <p>此錯誤顯示您的『模式』與設定的『MerchantID、HashKey、HashIV』搭配有誤，請參考下述調整。</p>
+<p>測試模式必須使用測試專用的MerchantID、HashKey、HashIV，並勾選測試模式，才能順利建立訂單。</p>
+<p><img src="https://www.ecpay.com.tw/Upload/Announce/201805/images/17a8a20180517101405.jpg"><br>正式模式必須使用正式申請的MerchantID、HashKey、HashIV，並取消勾選測試模式，才能順利建立訂單<br><img src="https://www.ecpay.com.tw/Upload/Announce/201805/images/a9dde20180517101531.jpg"></p>
 
     </div>
 
@@ -228,13 +231,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/%E7%B6%A0%E7%95%8C-%E9%87%91%E6%B5%81-%E7%AB%99%E5%85%A7%E4%BB%98%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C/" rel="prev" title="綠界 金流-站內付常見問題">
-      <i class="fa fa-chevron-left"></i> 綠界 金流-站內付常見問題
+    <a href="/%E7%B6%A0%E7%95%8C-%E9%87%91%E6%B5%81-AIO%E5%87%BA%E7%8F%BEMerchantID-is-Null/" rel="prev" title="綠界 金流-AIO出現MerchantID is Null">
+      <i class="fa fa-chevron-left"></i> 綠界 金流-AIO出現MerchantID is Null
     </a></div>
-      <div class="post-nav-item">
-    <a href="/%E7%B6%A0%E7%95%8C-%E6%A8%A1%E7%B5%84-woocommerce%E5%BB%BA%E7%AB%8B%E7%89%A9%E6%B5%81%E8%A8%82%E5%96%AE%E6%8C%89%E9%88%95%E6%9C%AA%E5%87%BA%E7%8F%BE%E5%B8%B8%E8%A6%8B%E5%8E%9F%E5%9B%A0/" rel="next" title="綠界 模組-woocommerce建立物流訂單按鈕未出現常見原因">
-      綠界 模組-woocommerce建立物流訂單按鈕未出現常見原因 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
