@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ecpay0401.github.io/2020/09/04/%E7%B6%A0%E7%95%8C-%E9%9B%BB%E5%AD%90%E7%99%BC%E7%A5%A8-%E6%AA%A2%E6%9F%A5%E7%A2%BC%E7%89%88%E5%92%8CJSON%E7%89%88API%E5%B7%AE%E7%95%B0/</loc>
+    
+    <lastmod>2020-09-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ecpay0401.github.io/2020/09/04/%E7%B6%A0%E7%95%8C-%E9%87%91%E6%B5%81-%E7%AB%99%E5%85%A7%E4%BB%98%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C/</loc>
     
     <lastmod>2020-09-04</lastmod>
@@ -98,6 +105,13 @@
   
   <url>
     <loc>https://ecpay0401.github.io/categories/%E9%87%91%E6%B5%81/</loc>
+    <lastmod>2020-09-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ecpay0401.github.io/categories/%E9%9B%BB%E5%AD%90%E7%99%BC%E7%A5%A8/</loc>
     <lastmod>2020-09-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
