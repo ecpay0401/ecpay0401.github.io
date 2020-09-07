@@ -21,20 +21,20 @@
     var CONFIG = {"hostname":"ecpay0401.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="常見付款狀態未更新原因若消費者已經付款，綠界廠商管理後台也已更新付款 但您的系統後台(Woocommerec、Opencart、Shopline、QDM、美安….平台) 付款狀態未被更新，請程式人員檢查以下設定: (1)接收付款通知的伺服器是否異常 ● 如您正在舉辦搶購活動，請務必確保伺服器可短時間大量接收綠界回傳的付款結果通知    Ex:AWS、台灣固網….等其他網路業者，預設防火牆機制，短期">
+  <meta name="description" content="驗證發票金額發現錯誤，與商品合計金額不符的可能原因 ※請留意ItemAmount需統一為含稅金額，所以商品金額需符合以下規則。 1.當vat&#x3D;1 ItemPrice(含稅)*ItemCount&#x3D;ItemAmount(含稅) 各項總合並四捨五入&#x3D;salesAmount(含稅) EX： ItemPrice&#x3D;10|-20|30 ItemCount&#x3D;2|1|2 ItemAmount&#x3D;20|-20|60 s">
 <meta property="og:type" content="article">
-<meta property="og:title" content="綠界-金流 常見付款狀態未更新原因">
-<meta property="og:url" content="https://ecpay0401.github.io/post/23316.html">
+<meta property="og:title" content="綠界-電子發票 驗證發票金額發現錯誤，與商品合計金額不符的可能原因">
+<meta property="og:url" content="https://ecpay0401.github.io/%E7%B6%A0%E7%95%8C-%E9%9B%BB%E5%AD%90%E7%99%BC%E7%A5%A8-%E9%A9%97%E8%AD%89%E7%99%BC%E7%A5%A8%E9%87%91%E9%A1%8D%E7%99%BC%E7%8F%BE%E9%8C%AF%E8%AA%A4%EF%BC%8C%E8%88%87%E5%95%86%E5%93%81%E5%90%88%E8%A8%88%E9%87%91%E9%A1%8D%E4%B8%8D%E7%AC%A6%E7%9A%84%E5%8F%AF%E8%83%BD%E5%8E%9F%E5%9B%A0/index.html">
 <meta property="og:site_name" content="綠界">
-<meta property="og:description" content="常見付款狀態未更新原因若消費者已經付款，綠界廠商管理後台也已更新付款 但您的系統後台(Woocommerec、Opencart、Shopline、QDM、美安….平台) 付款狀態未被更新，請程式人員檢查以下設定: (1)接收付款通知的伺服器是否異常 ● 如您正在舉辦搶購活動，請務必確保伺服器可短時間大量接收綠界回傳的付款結果通知    Ex:AWS、台灣固網….等其他網路業者，預設防火牆機制，短期">
+<meta property="og:description" content="驗證發票金額發現錯誤，與商品合計金額不符的可能原因 ※請留意ItemAmount需統一為含稅金額，所以商品金額需符合以下規則。 1.當vat&#x3D;1 ItemPrice(含稅)*ItemCount&#x3D;ItemAmount(含稅) 各項總合並四捨五入&#x3D;salesAmount(含稅) EX： ItemPrice&#x3D;10|-20|30 ItemCount&#x3D;2|1|2 ItemAmount&#x3D;20|-20|60 s">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2020-09-07T02:59:56.000Z">
-<meta property="article:modified_time" content="2020-09-07T05:17:21.887Z">
+<meta property="article:published_time" content="2020-09-07T05:29:59.000Z">
+<meta property="article:modified_time" content="2020-09-07T05:30:59.829Z">
 <meta property="article:author" content="Athena Y">
 <meta property="article:tag" content="綠界,電子地圖無法顯示,綠界-電子地圖無法顯示, 綠界 物流-找不到加密金鑰原因, 綠界 金流-AIO出現MerchantID-is-Null">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://ecpay0401.github.io/post/23316.html">
+<link rel="canonical" href="https://ecpay0401.github.io/%E7%B6%A0%E7%95%8C-%E9%9B%BB%E5%AD%90%E7%99%BC%E7%A5%A8-%E9%A9%97%E8%AD%89%E7%99%BC%E7%A5%A8%E9%87%91%E9%A1%8D%E7%99%BC%E7%8F%BE%E9%8C%AF%E8%AA%A4%EF%BC%8C%E8%88%87%E5%95%86%E5%93%81%E5%90%88%E8%A8%88%E9%87%91%E9%A1%8D%E4%B8%8D%E7%AC%A6%E7%9A%84%E5%8F%AF%E8%83%BD%E5%8E%9F%E5%9B%A0/">
 
 
 <script id="page-configurations">
@@ -47,7 +47,7 @@
   };
 </script>
 
-  <title>綠界-金流 常見付款狀態未更新原因 | 綠界</title>
+  <title>綠界-電子發票 驗證發票金額發現錯誤，與商品合計金額不符的可能原因 | 綠界</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170083721-2"></script>
     <script>
@@ -205,7 +205,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://ecpay0401.github.io/post/23316.html">
+    <link itemprop="mainEntityOfPage" href="https://ecpay0401.github.io/%E7%B6%A0%E7%95%8C-%E9%9B%BB%E5%AD%90%E7%99%BC%E7%A5%A8-%E9%A9%97%E8%AD%89%E7%99%BC%E7%A5%A8%E9%87%91%E9%A1%8D%E7%99%BC%E7%8F%BE%E9%8C%AF%E8%AA%A4%EF%BC%8C%E8%88%87%E5%95%86%E5%93%81%E5%90%88%E8%A8%88%E9%87%91%E9%A1%8D%E4%B8%8D%E7%AC%A6%E7%9A%84%E5%8F%AF%E8%83%BD%E5%8E%9F%E5%9B%A0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -218,7 +218,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          綠界-金流 常見付款狀態未更新原因
+          綠界-電子發票 驗證發票金額發現錯誤，與商品合計金額不符的可能原因
         </h1>
 
         <div class="post-meta">
@@ -229,7 +229,7 @@
               <span class="post-meta-item-text">發表於</span>
               
 
-              <time title="創建時間：2020-09-07 10:59:56 / 修改時間：13:17:21" itemprop="dateCreated datePublished" datetime="2020-09-07T10:59:56+08:00">2020-09-07</time>
+              <time title="創建時間：2020-09-07 13:29:59 / 修改時間：13:30:59" itemprop="dateCreated datePublished" datetime="2020-09-07T13:29:59+08:00">2020-09-07</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -237,7 +237,7 @@
               </span>
               <span class="post-meta-item-text">分類於</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%87%91%E6%B5%81/" itemprop="url" rel="index"><span itemprop="name">金流</span></a>
+                  <a href="/categories/%E9%9B%BB%E5%AD%90%E7%99%BC%E7%A5%A8/" itemprop="url" rel="index"><span itemprop="name">電子發票</span></a>
                 </span>
             </span>
 
@@ -259,22 +259,20 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>常見付款狀態未更新原因<br>若消費者已經付款，綠界廠商管理後台也已更新付款</p>
-<p>但您的系統後台(Woocommerec、Opencart、Shopline、QDM、美安….平台)</p>
-<p>付款狀態未被更新，請程式人員檢查以下設定:</p>
-<p>(1)接收付款通知的伺服器是否異常</p>
-<p>● 如您正在舉辦搶購活動，請務必確保伺服器可短時間大量接收綠界回傳的付款結果通知</p>
-<p>   Ex:AWS、台灣固網….等其他網路業者，預設防火牆機制，短期間接收大量回傳會視為攻擊事件，請將綠界IP加入白名單</p>
-<p>(2)近期是否有變更接收付款通知的ReturnURL網址</p>
-<p>(3)接收付款結果的ReturnURL程式是否有判斷交易成功(RtnCode=1表示付款成功，其餘代碼為失敗)</p>
-<p>(4)貴司系統收到綠界回傳結果，是否有正確回應1|OK</p>
-<p>(5)因資安政策規定綠界僅提供443 PORT且需使用合法的DomainName進行設定</p>
-<p>上述原因確認完畢，仍然無法排除此問題請提供以下資訊</p>
-<p>並Email至<a href="mailto:&#116;&#x65;&#x63;&#x68;&#x73;&#x75;&#112;&#x70;&#111;&#x72;&#x74;&#x40;&#x65;&#99;&#112;&#x61;&#121;&#x2e;&#99;&#x6f;&#x6d;&#46;&#116;&#119;">&#116;&#x65;&#x63;&#x68;&#x73;&#x75;&#112;&#x70;&#111;&#x72;&#x74;&#x40;&#x65;&#99;&#112;&#x61;&#121;&#x2e;&#99;&#x6f;&#x6d;&#46;&#116;&#119;</a></p>
-<p>(1)商店代號(MerchantID)</p>
-<p>(2)廠商交易編號(MerchantTradeNo)</p>
-<p>(3)交易日期(MerchantTradeDate)</p>
-<p>常見未收到綠界回傳的錯誤訊息</p>
+        <p>驗證發票金額發現錯誤，與商品合計金額不符的可能原因</p>
+<p>※請留意ItemAmount需統一為含稅金額，所以商品金額需符合以下規則。</p>
+<p>1.當vat=1 ItemPrice(含稅)*ItemCount=ItemAmount(含稅) 各項總合並四捨五入=salesAmount(含稅)</p>
+<p>EX：</p>
+<p>ItemPrice=10|-20|30</p>
+<p>ItemCount=2|1|2</p>
+<p>ItemAmount=20|-20|60</p>
+<p>salesAmount=60</p>
+<p>2.當vat=0 ItemPrice(不含稅)<em>ItemCount</em>1.05=ItemAmount(含稅) 各項總合並四捨五入=salesAmount(含稅)</p>
+<p>EX：</p>
+<p>ItemPrice=2980|-566|1</p>
+<p>ItemCount=2|1|1</p>
+<p>ItemAmount=6258|-594.3|1.05</p>
+<p>salesAmount=5665</p>
 
     </div>
 
@@ -290,12 +288,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/post/51456.html" rel="prev" title="綠界-金流 綠界帳戶餘額低於退刷金額或為負數導致無法退刷及建立物流訂單">
-      <i class="fa fa-chevron-left"></i> 綠界-金流 綠界帳戶餘額低於退刷金額或為負數導致無法退刷及建立物流訂單
+    <a href="/%E7%B6%A0%E7%95%8C-%E9%87%91%E6%B5%81-%E5%B8%B8%E8%A6%8B%E4%BB%98%E6%AC%BE%E7%8B%80%E6%85%8B%E6%9C%AA%E6%9B%B4%E6%96%B0%E5%8E%9F%E5%9B%A0/" rel="prev" title="綠界-金流 常見付款狀態未更新原因">
+      <i class="fa fa-chevron-left"></i> 綠界-金流 常見付款狀態未更新原因
     </a></div>
       <div class="post-nav-item">
-    <a href="/post/5280d3ef.html" rel="next" title="綠界-電子發票 驗證發票金額發現錯誤，與商品合計金額不符的可能原因">
-      綠界-電子發票 驗證發票金額發現錯誤，與商品合計金額不符的可能原因 <i class="fa fa-chevron-right"></i>
+    <a href="/%E7%B6%A0%E7%95%8C-%E9%9B%BB%E5%AD%90%E7%99%BC%E7%A5%A8-%E5%95%86%E5%93%81%E6%98%8E%E7%B4%B0%E8%B3%87%E6%96%99%E6%A0%BC%E5%BC%8F%E4%B8%8D%E6%AD%A3%E7%A2%BA/" rel="next" title="綠界-電子發票 商品明細資料格式不正確">
+      綠界-電子發票 商品明細資料格式不正確 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>

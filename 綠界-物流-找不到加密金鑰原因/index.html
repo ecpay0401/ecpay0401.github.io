@@ -21,20 +21,26 @@
     var CONFIG = {"hostname":"ecpay0401.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="驗證發票金額發現錯誤，與商品合計金額不符的可能原因 ※請留意ItemAmount需統一為含稅金額，所以商品金額需符合以下規則。 1.當vat&#x3D;1 ItemPrice(含稅)*ItemCount&#x3D;ItemAmount(含稅) 各項總合並四捨五入&#x3D;salesAmount(含稅) EX： ItemPrice&#x3D;10|-20|30 ItemCount&#x3D;2|1|2 ItemAmount&#x3D;20|-20|60 s">
+  <meta name="description" content="物流找不到加密金鑰原因: 串接物流API時，若收到以下錯誤訊息，主要發生於以下兩種情境： 1.串接電子地圖(https:&#x2F;&#x2F;logistics.ecpay.com.tw&#x2F;Express&#x2F;map) 原因：造成此錯誤訊息的主因是MerchantID與呼叫的環境(API URL) 或 LogisticsSubType (物流子類型) 沒有正確配對 解決方式：請修正所呼叫的API URL網址、或者調整Lo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="綠界-電子發票 驗證發票金額發現錯誤，與商品合計金額不符的可能原因">
-<meta property="og:url" content="https://ecpay0401.github.io/post/5280d3ef.html">
+<meta property="og:title" content="綠界物流-找不到加密金鑰原因">
+<meta property="og:url" content="https://ecpay0401.github.io/%E7%B6%A0%E7%95%8C-%E7%89%A9%E6%B5%81-%E6%89%BE%E4%B8%8D%E5%88%B0%E5%8A%A0%E5%AF%86%E9%87%91%E9%91%B0%E5%8E%9F%E5%9B%A0/index.html">
 <meta property="og:site_name" content="綠界">
-<meta property="og:description" content="驗證發票金額發現錯誤，與商品合計金額不符的可能原因 ※請留意ItemAmount需統一為含稅金額，所以商品金額需符合以下規則。 1.當vat&#x3D;1 ItemPrice(含稅)*ItemCount&#x3D;ItemAmount(含稅) 各項總合並四捨五入&#x3D;salesAmount(含稅) EX： ItemPrice&#x3D;10|-20|30 ItemCount&#x3D;2|1|2 ItemAmount&#x3D;20|-20|60 s">
+<meta property="og:description" content="物流找不到加密金鑰原因: 串接物流API時，若收到以下錯誤訊息，主要發生於以下兩種情境： 1.串接電子地圖(https:&#x2F;&#x2F;logistics.ecpay.com.tw&#x2F;Express&#x2F;map) 原因：造成此錯誤訊息的主因是MerchantID與呼叫的環境(API URL) 或 LogisticsSubType (物流子類型) 沒有正確配對 解決方式：請修正所呼叫的API URL網址、或者調整Lo">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2020-09-07T05:29:59.000Z">
-<meta property="article:modified_time" content="2020-09-07T05:30:59.829Z">
+<meta property="og:image" content="https://www.ecpay.com.tw/Upload/Announce/201909/images/dd8af20190911175209.JPG">
+<meta property="og:image" content="https://i.imgur.com/o6ly7Q8.jpg">
+<meta property="og:image" content="https://www.ecpay.com.tw/Upload/Announce/201909/images/4134820190911175228.JPG">
+<meta property="og:image" content="https://i.imgur.com/8AxXEvP.jpg">
+<meta property="og:image" content="https://i.imgur.com/pVWXC6o.jpg">
+<meta property="article:published_time" content="2020-09-04T02:27:47.000Z">
+<meta property="article:modified_time" content="2020-09-07T05:17:21.861Z">
 <meta property="article:author" content="Athena Y">
 <meta property="article:tag" content="綠界,電子地圖無法顯示,綠界-電子地圖無法顯示, 綠界 物流-找不到加密金鑰原因, 綠界 金流-AIO出現MerchantID-is-Null">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.ecpay.com.tw/Upload/Announce/201909/images/dd8af20190911175209.JPG">
 
-<link rel="canonical" href="https://ecpay0401.github.io/post/5280d3ef.html">
+<link rel="canonical" href="https://ecpay0401.github.io/%E7%B6%A0%E7%95%8C-%E7%89%A9%E6%B5%81-%E6%89%BE%E4%B8%8D%E5%88%B0%E5%8A%A0%E5%AF%86%E9%87%91%E9%91%B0%E5%8E%9F%E5%9B%A0/">
 
 
 <script id="page-configurations">
@@ -47,7 +53,7 @@
   };
 </script>
 
-  <title>綠界-電子發票 驗證發票金額發現錯誤，與商品合計金額不符的可能原因 | 綠界</title>
+  <title>綠界物流-找不到加密金鑰原因 | 綠界</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170083721-2"></script>
     <script>
@@ -205,7 +211,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://ecpay0401.github.io/post/5280d3ef.html">
+    <link itemprop="mainEntityOfPage" href="https://ecpay0401.github.io/%E7%B6%A0%E7%95%8C-%E7%89%A9%E6%B5%81-%E6%89%BE%E4%B8%8D%E5%88%B0%E5%8A%A0%E5%AF%86%E9%87%91%E9%91%B0%E5%8E%9F%E5%9B%A0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -218,7 +224,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          綠界-電子發票 驗證發票金額發現錯誤，與商品合計金額不符的可能原因
+          綠界物流-找不到加密金鑰原因
         </h1>
 
         <div class="post-meta">
@@ -227,17 +233,23 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">發表於</span>
-              
 
-              <time title="創建時間：2020-09-07 13:29:59 / 修改時間：13:30:59" itemprop="dateCreated datePublished" datetime="2020-09-07T13:29:59+08:00">2020-09-07</time>
+              <time title="創建時間：2020-09-04 10:27:47" itemprop="dateCreated datePublished" datetime="2020-09-04T10:27:47+08:00">2020-09-04</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2020-09-07 13:17:21" itemprop="dateModified" datetime="2020-09-07T13:17:21+08:00">2020-09-07</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分類於</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%9B%BB%E5%AD%90%E7%99%BC%E7%A5%A8/" itemprop="url" rel="index"><span itemprop="name">電子發票</span></a>
+                  <a href="/categories/%E7%89%A9%E6%B5%81/" itemprop="url" rel="index"><span itemprop="name">物流</span></a>
                 </span>
             </span>
 
@@ -259,20 +271,21 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>驗證發票金額發現錯誤，與商品合計金額不符的可能原因</p>
-<p>※請留意ItemAmount需統一為含稅金額，所以商品金額需符合以下規則。</p>
-<p>1.當vat=1 ItemPrice(含稅)*ItemCount=ItemAmount(含稅) 各項總合並四捨五入=salesAmount(含稅)</p>
-<p>EX：</p>
-<p>ItemPrice=10|-20|30</p>
-<p>ItemCount=2|1|2</p>
-<p>ItemAmount=20|-20|60</p>
-<p>salesAmount=60</p>
-<p>2.當vat=0 ItemPrice(不含稅)<em>ItemCount</em>1.05=ItemAmount(含稅) 各項總合並四捨五入=salesAmount(含稅)</p>
-<p>EX：</p>
-<p>ItemPrice=2980|-566|1</p>
-<p>ItemCount=2|1|1</p>
-<p>ItemAmount=6258|-594.3|1.05</p>
-<p>salesAmount=5665</p>
+        <p>物流找不到加密金鑰原因:</p>
+<p>串接物流API時，若收到以下錯誤訊息，主要發生於以下兩種情境：</p>
+<p>1.串接電子地圖(<a target="_blank" rel="noopener" href="https://logistics.ecpay.com.tw/Express/map">https://logistics.ecpay.com.tw/Express/map</a>)</p>
+<p>原因：造成此錯誤訊息的主因是MerchantID與呼叫的環境(API URL) 或 LogisticsSubType (物流子類型) 沒有正確配對<br><img src="https://www.ecpay.com.tw/Upload/Announce/201909/images/dd8af20190911175209.JPG"></p>
+<p>解決方式：請修正所呼叫的API URL網址、或者調整LogisticsSubType的參數值、或更換使用的MerchantID。</p>
+<p>參考：<br><img src="https://i.imgur.com/o6ly7Q8.jpg"></p>
+<p>2.串接建立物流訂單(<a target="_blank" rel="noopener" href="https://logistics.ecpay.com.tw/Express/Create">https://logistics.ecpay.com.tw/Express/Create</a>)<br><img src="https://www.ecpay.com.tw/Upload/Announce/201909/images/4134820190911175228.JPG"><br>原因：造成此錯誤訊息的主因是MerchantID與LogisticsSubType (物流子類型)沒有正確配對。</p>
+<p>解決方式：請依據所申請的物流類型(B2C或C2C)，修正LogisticsSubType的參數值。</p>
+<p>例如(以綠界提供的兩組測試MerchantID為例)：<br><img src="https://i.imgur.com/8AxXEvP.jpg"><br>●注意事項●</p>
+<p>1.不同的MerchantID有其配對的HashKey及HashIV，故更換MerchantID時，HashKey及HashIV請一併更換。</p>
+<p>2.請留意複製過程中是否有空白鍵(並請用複製貼上的方式)，手動key容易不小心多一格空白就會造成錯誤，將會導致介接失敗。</p>
+<p>以綠界科技提供的測試MerchantID為例：<br><img src="https://i.imgur.com/pVWXC6o.jpg"><br>3. 賣家的LogisticsSubType參數值，請依據向綠界科技申請的物流模式是B2C或C2C，設定對應的參數值。</p>
+<p>可至綠界管理後台查詢，路徑為物流管理→對帳查詢→物流廠商。</p>
+<p>若在”物流廠商”選項內有”店到店”，則物流類型為C2C (反之為B2C)</p>
+<p>例: 使用7-11交貨便服務，申請的物流模式為C2C，則對應的LogisticsSubType應為UNIMARTC2C。</p>
 
     </div>
 
@@ -288,12 +301,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/post/23316.html" rel="prev" title="綠界-金流 常見付款狀態未更新原因">
-      <i class="fa fa-chevron-left"></i> 綠界-金流 常見付款狀態未更新原因
+    <a href="/%E7%B6%A0%E7%95%8C-%E9%9B%BB%E5%AD%90%E5%9C%B0%E5%9C%96%E7%84%A1%E6%B3%95%E9%A1%AF%E7%A4%BA/" rel="prev" title="綠界-電子地圖無法顯示">
+      <i class="fa fa-chevron-left"></i> 綠界-電子地圖無法顯示
     </a></div>
       <div class="post-nav-item">
-    <a href="/post/e19c75cf.html" rel="next" title="綠界-電子發票 商品明細資料格式不正確">
-      綠界-電子發票 商品明細資料格式不正確 <i class="fa fa-chevron-right"></i>
+    <a href="/%E7%B6%A0%E7%95%8C-%E9%87%91%E6%B5%81-%E5%95%86%E5%BA%97%E6%9C%AA%E9%96%8B%E5%95%9F%E6%94%B6%E6%AC%BE%E6%9C%8D%E5%8B%99%E5%8E%9F%E5%9B%A0/" rel="next" title="綠界 金流-商店未開啟收款服務原因">
+      綠界 金流-商店未開啟收款服務原因 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
