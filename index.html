@@ -202,6 +202,87 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://ecpay0401.github.io/post/5280d3ef.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Athena Y">
+      <meta itemprop="description" content="解答問題">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ECpay">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/post/5280d3ef.html" class="post-title-link" itemprop="url">綠界-電子發票 驗證發票金額發現錯誤，與商品合計金額不符的可能原因</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時間：2020-09-07 13:29:59 / 修改時間：13:30:42" itemprop="dateCreated datePublished" datetime="2020-09-07T13:29:59+08:00">2020-09-07</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%9B%BB%E5%AD%90%E7%99%BC%E7%A5%A8/" itemprop="url" rel="index"><span itemprop="name">電子發票</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>驗證發票金額發現錯誤，與商品合計金額不符的可能原因</p>
+<p>※請留意ItemAmount需統一為含稅金額，所以商品金額需符合以下規則。</p>
+<p>1.當vat=1 ItemPrice(含稅)*ItemCount=ItemAmount(含稅) 各項總合並四捨五入=salesAmount(含稅)</p>
+<p>EX：</p>
+<p>ItemPrice=10|-20|30</p>
+<p>ItemCount=2|1|2</p>
+<p>ItemAmount=20|-20|60</p>
+<p>salesAmount=60</p>
+<p>2.當vat=0 ItemPrice(不含稅)<em>ItemCount</em>1.05=ItemAmount(含稅) 各項總合並四捨五入=salesAmount(含稅)</p>
+<p>EX：</p>
+<p>ItemPrice=2980|-566|1</p>
+<p>ItemCount=2|1|1</p>
+<p>ItemAmount=6258|-594.3|1.05</p>
+<p>salesAmount=5665</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="https://ecpay0401.github.io/post/23316.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -261,7 +342,7 @@
 <p>(4)貴司系統收到綠界回傳結果，是否有正確回應1|OK</p>
 <p>(5)因資安政策規定綠界僅提供443 PORT且需使用合法的DomainName進行設定</p>
 <p>上述原因確認完畢，仍然無法排除此問題請提供以下資訊</p>
-<p>並Email至<a href="mailto:&#116;&#x65;&#99;&#x68;&#115;&#117;&#x70;&#112;&#x6f;&#114;&#x74;&#64;&#101;&#x63;&#x70;&#97;&#121;&#x2e;&#x63;&#x6f;&#109;&#46;&#116;&#x77;">&#116;&#x65;&#99;&#x68;&#115;&#117;&#x70;&#112;&#x6f;&#114;&#x74;&#64;&#101;&#x63;&#x70;&#97;&#121;&#x2e;&#x63;&#x6f;&#109;&#46;&#116;&#x77;</a></p>
+<p>並Email至<a href="mailto:&#x74;&#101;&#x63;&#104;&#115;&#117;&#x70;&#x70;&#x6f;&#x72;&#x74;&#64;&#x65;&#99;&#112;&#x61;&#x79;&#46;&#99;&#111;&#x6d;&#x2e;&#x74;&#119;">&#x74;&#101;&#x63;&#104;&#115;&#117;&#x70;&#x70;&#x6f;&#x72;&#x74;&#64;&#x65;&#99;&#112;&#x61;&#x79;&#46;&#99;&#111;&#x6d;&#x2e;&#x74;&#119;</a></p>
 <p>(1)商店代號(MerchantID)</p>
 <p>(2)廠商交易編號(MerchantTradeNo)</p>
 <p>(3)交易日期(MerchantTradeDate)</p>
@@ -887,86 +968,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://ecpay0401.github.io/post/7501.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Athena Y">
-      <meta itemprop="description" content="解答問題">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ECpay">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/post/7501.html" class="post-title-link" itemprop="url">綠界 金流-信用卡授權等於扣款成功嗎?</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">發表於</span>
-
-              <time title="創建時間：2020-09-04 11:41:05" itemprop="dateCreated datePublished" datetime="2020-09-04T11:41:05+08:00">2020-09-04</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2020-09-07 13:17:21" itemprop="dateModified" datetime="2020-09-07T13:17:21+08:00">2020-09-07</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分類於</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%87%91%E6%B5%81/" itemprop="url" rel="index"><span itemprop="name">金流</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>當信用卡消費產生時會進行信用卡授權，此時會佔用卡片上的可用額度，但實際上並非已請/扣款。</p>
-<p>也就是說，當消費者收到消費簡訊通知、APP通知時<br><img src="https://www.ecpay.com.tw/Upload/Announce/201910/images/a5df420191028180007.png"></p>
-<p><img src="https://www.ecpay.com.tw/Upload/Announce/201910/images/49d3320191028180019.png"><br>待商家進行關帳動作後，綠界才會協助將資料送給銀行請款。此時才算完成扣款動作喔!</p>
-<p>Q:為什麼訂單顯示『3D授權未於時間內完成，故交易失敗』，消費者打去發卡銀行問，銀行的回覆卻是授權成功?</p>
-<p>A:因為綠界未收到銀行授權成功回覆，會將此單判定為失敗，判定失敗的訂單，將不會向銀行請款。</p>
-<p>Q:明明交易失敗，為什麼帳單顯示這筆交易明細</p>
-<p>A:因為各家銀行的通知方式或帳單顯示方式不同，可能會在”未請款”帳單中出現該筆交易，但不代表已扣款成功。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1036,7 +1037,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
