@@ -54,6 +54,27 @@
       </categories>
   </entry>
   <entry>
+    <title>綠界-模組woocommerce選擇電子地圖遇到『找不到加密金鑰，請確認是否有申請開通此物流方式!』</title>
+    <url>/post/a4ac0757.html</url>
+    <content><![CDATA[<p>使用Woocommerce串接綠界服務，選擇門市時遇到『找不到加密金鑰，請確認是否有申請開通此物流方式!』原因如下三點：<br><img src="https://www.ecpay.com.tw/Upload/Announce/201907/images/0355120190716102532.jpg"><br>1.測試模式若勾選，必須使用測試專用的串接資訊，才能順利選擇門市：</p>
+<p>B2C物流類型帳號</p>
+<p>特店編號=2000132</p>
+<p>HashKey=5294y06JbISpM5x9</p>
+<p>HashIV=v77hoKGq4kWxNNIS</p>
+<p>C2C物流類型帳號</p>
+<p>特店編號=2000933</p>
+<p>HashKey=XBERn1YOvpM9nfZc</p>
+<p>HashIV=h1ONHk4P4yqbl5LK</p>
+<p>反之，若未勾選，則必須使用正式申請的串接資訊，才能選擇門市：</p>
+<p>請至廠商管理後台<a href="https://vendor.ecpay.com.tw/%EF%BC%9E%E7%B3%BB%E7%B5%B1%E9%96%8B%E7%99%BC%E7%AE%A1%E7%90%86%EF%BC%9E%E7%B3%BB%E7%B5%B1%E4%BB%8B%E6%8E%A5%E8%A8%AD%E5%AE%9A">https://vendor.ecpay.com.tw/＞系統開發管理＞系統介接設定</a>  就可取得</p>
+<p>2.若需使用物流服務，尚需另外申請，請至<a href="https://www.ecpay.com.tw/IntroTransport/Index%E5%AE%8C%E6%88%90%E7%94%B3%E8%AB%8B%E6%B5%81%E7%A8%8B%E6%89%8D%E8%83%BD%E4%BD%BF%E7%94%A8">https://www.ecpay.com.tw/IntroTransport/Index完成申請流程才能使用</a></p>
+<p>3.待申請完成，請記得當初申請的物流類型是C2C 或 B2C，並設定於上圖的『物流類型』，設定與您申請的相符，才能使用物流服務。</p>
+]]></content>
+      <categories>
+        <category>模組</category>
+      </categories>
+  </entry>
+  <entry>
     <title>綠界物流-找不到加密金鑰原因</title>
     <url>/post/35838.html</url>
     <content><![CDATA[<p>物流找不到加密金鑰原因:</p>
@@ -103,21 +124,6 @@
       </categories>
   </entry>
   <entry>
-    <title>綠界 金流-信用卡授權等於扣款成功嗎?</title>
-    <url>/post/7501.html</url>
-    <content><![CDATA[<p>當信用卡消費產生時會進行信用卡授權，此時會佔用卡片上的可用額度，但實際上並非已請/扣款。</p>
-<p>也就是說，當消費者收到消費簡訊通知、APP通知時<br><img src="https://www.ecpay.com.tw/Upload/Announce/201910/images/a5df420191028180007.png"></p>
-<p><img src="https://www.ecpay.com.tw/Upload/Announce/201910/images/49d3320191028180019.png"><br>待商家進行關帳動作後，綠界才會協助將資料送給銀行請款。此時才算完成扣款動作喔!</p>
-<p>Q:為什麼訂單顯示『3D授權未於時間內完成，故交易失敗』，消費者打去發卡銀行問，銀行的回覆卻是授權成功?</p>
-<p>A:因為綠界未收到銀行授權成功回覆，會將此單判定為失敗，判定失敗的訂單，將不會向銀行請款。</p>
-<p>Q:明明交易失敗，為什麼帳單顯示這筆交易明細</p>
-<p>A:因為各家銀行的通知方式或帳單顯示方式不同，可能會在”未請款”帳單中出現該筆交易，但不代表已扣款成功。</p>
-]]></content>
-      <categories>
-        <category>金流</category>
-      </categories>
-  </entry>
-  <entry>
     <title>綠界 金流-商店未開啟收款服務原因</title>
     <url>/post/32720.html</url>
     <content><![CDATA[<p>金流:商店未開啟收款服務原因<br>1.請確認您的API網址，</p>
@@ -138,6 +144,21 @@
       </categories>
   </entry>
   <entry>
+    <title>綠界 金流-信用卡授權等於扣款成功嗎?</title>
+    <url>/post/7501.html</url>
+    <content><![CDATA[<p>當信用卡消費產生時會進行信用卡授權，此時會佔用卡片上的可用額度，但實際上並非已請/扣款。</p>
+<p>也就是說，當消費者收到消費簡訊通知、APP通知時<br><img src="https://www.ecpay.com.tw/Upload/Announce/201910/images/a5df420191028180007.png"></p>
+<p><img src="https://www.ecpay.com.tw/Upload/Announce/201910/images/49d3320191028180019.png"><br>待商家進行關帳動作後，綠界才會協助將資料送給銀行請款。此時才算完成扣款動作喔!</p>
+<p>Q:為什麼訂單顯示『3D授權未於時間內完成，故交易失敗』，消費者打去發卡銀行問，銀行的回覆卻是授權成功?</p>
+<p>A:因為綠界未收到銀行授權成功回覆，會將此單判定為失敗，判定失敗的訂單，將不會向銀行請款。</p>
+<p>Q:明明交易失敗，為什麼帳單顯示這筆交易明細</p>
+<p>A:因為各家銀行的通知方式或帳單顯示方式不同，可能會在”未請款”帳單中出現該筆交易，但不代表已扣款成功。</p>
+]]></content>
+      <categories>
+        <category>金流</category>
+      </categories>
+  </entry>
+  <entry>
     <title>綠界-金流 常見付款狀態未更新原因</title>
     <url>/post/23316.html</url>
     <content><![CDATA[<p>常見付款狀態未更新原因<br>若消費者已經付款，綠界廠商管理後台也已更新付款</p>
@@ -151,7 +172,7 @@
 <p>(4)貴司系統收到綠界回傳結果，是否有正確回應1|OK</p>
 <p>(5)因資安政策規定綠界僅提供443 PORT且需使用合法的DomainName進行設定</p>
 <p>上述原因確認完畢，仍然無法排除此問題請提供以下資訊</p>
-<p>並Email至<a href="mailto:&#116;&#101;&#x63;&#104;&#115;&#117;&#x70;&#112;&#x6f;&#x72;&#116;&#x40;&#101;&#x63;&#112;&#x61;&#121;&#x2e;&#99;&#111;&#x6d;&#46;&#x74;&#119;">&#116;&#101;&#x63;&#104;&#115;&#117;&#x70;&#112;&#x6f;&#x72;&#116;&#x40;&#101;&#x63;&#112;&#x61;&#121;&#x2e;&#99;&#111;&#x6d;&#46;&#x74;&#119;</a></p>
+<p>並Email至<a href="mailto:&#x74;&#x65;&#x63;&#104;&#115;&#117;&#x70;&#112;&#111;&#x72;&#116;&#x40;&#x65;&#x63;&#112;&#97;&#x79;&#x2e;&#99;&#x6f;&#109;&#x2e;&#116;&#119;">&#x74;&#x65;&#x63;&#104;&#115;&#117;&#x70;&#112;&#111;&#x72;&#116;&#x40;&#x65;&#x63;&#112;&#97;&#x79;&#x2e;&#99;&#x6f;&#109;&#x2e;&#116;&#119;</a></p>
 <p>(1)商店代號(MerchantID)</p>
 <p>(2)廠商交易編號(MerchantTradeNo)</p>
 <p>(3)交易日期(MerchantTradeDate)</p>
