@@ -54,6 +54,27 @@
       </categories>
   </entry>
   <entry>
+    <title>綠界-模組woocommerce選擇電子地圖遇到『找不到加密金鑰，請確認是否有申請開通此物流方式!』</title>
+    <url>/%E7%B6%A0%E7%95%8C-%E6%A8%A1%E7%B5%84woocommerce%E9%81%B8%E6%93%87%E9%9B%BB%E5%AD%90%E5%9C%B0%E5%9C%96%E9%81%87%E5%88%B0%E3%80%8E%E6%89%BE%E4%B8%8D%E5%88%B0%E5%8A%A0%E5%AF%86%E9%87%91%E9%91%B0%EF%BC%8C%E8%AB%8B%E7%A2%BA%E8%AA%8D%E6%98%AF%E5%90%A6%E6%9C%89%E7%94%B3%E8%AB%8B%E9%96%8B%E9%80%9A%E6%AD%A4%E7%89%A9%E6%B5%81%E6%96%B9%E5%BC%8F-%E3%80%8F/</url>
+    <content><![CDATA[<p>使用Woocommerce串接綠界服務，選擇門市時遇到『找不到加密金鑰，請確認是否有申請開通此物流方式!』原因如下三點：<br><img src="https://www.ecpay.com.tw/Upload/Announce/201907/images/0355120190716102532.jpg"><br>1.測試模式若勾選，必須使用測試專用的串接資訊，才能順利選擇門市：</p>
+<p>B2C物流類型帳號</p>
+<p>特店編號=2000132</p>
+<p>HashKey=5294y06JbISpM5x9</p>
+<p>HashIV=v77hoKGq4kWxNNIS</p>
+<p>C2C物流類型帳號</p>
+<p>特店編號=2000933</p>
+<p>HashKey=XBERn1YOvpM9nfZc</p>
+<p>HashIV=h1ONHk4P4yqbl5LK</p>
+<p>反之，若未勾選，則必須使用正式申請的串接資訊，才能選擇門市：</p>
+<p>請至廠商管理後台<a href="https://vendor.ecpay.com.tw/%EF%BC%9E%E7%B3%BB%E7%B5%B1%E9%96%8B%E7%99%BC%E7%AE%A1%E7%90%86%EF%BC%9E%E7%B3%BB%E7%B5%B1%E4%BB%8B%E6%8E%A5%E8%A8%AD%E5%AE%9A">https://vendor.ecpay.com.tw/＞系統開發管理＞系統介接設定</a>  就可取得</p>
+<p>2.若需使用物流服務，尚需另外申請，請至<a href="https://www.ecpay.com.tw/IntroTransport/Index%E5%AE%8C%E6%88%90%E7%94%B3%E8%AB%8B%E6%B5%81%E7%A8%8B%E6%89%8D%E8%83%BD%E4%BD%BF%E7%94%A8">https://www.ecpay.com.tw/IntroTransport/Index完成申請流程才能使用</a></p>
+<p>3.待申請完成，請記得當初申請的物流類型是C2C 或 B2C，並設定於上圖的『物流類型』，設定與您申請的相符，才能使用物流服務。</p>
+]]></content>
+      <categories>
+        <category>模組</category>
+      </categories>
+  </entry>
+  <entry>
     <title>綠界物流-找不到加密金鑰原因</title>
     <url>/%E7%B6%A0%E7%95%8C-%E7%89%A9%E6%B5%81-%E6%89%BE%E4%B8%8D%E5%88%B0%E5%8A%A0%E5%AF%86%E9%87%91%E9%91%B0%E5%8E%9F%E5%9B%A0/</url>
     <content><![CDATA[<p>物流找不到加密金鑰原因:</p>
@@ -74,27 +95,6 @@
 ]]></content>
       <categories>
         <category>物流</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>綠界-模組woocommerce選擇電子地圖遇到『找不到加密金鑰，請確認是否有申請開通此物流方式!』</title>
-    <url>/%E7%B6%A0%E7%95%8C-%E6%A8%A1%E7%B5%84woocommerce%E9%81%B8%E6%93%87%E9%9B%BB%E5%AD%90%E5%9C%B0%E5%9C%96%E9%81%87%E5%88%B0%E3%80%8E%E6%89%BE%E4%B8%8D%E5%88%B0%E5%8A%A0%E5%AF%86%E9%87%91%E9%91%B0%EF%BC%8C%E8%AB%8B%E7%A2%BA%E8%AA%8D%E6%98%AF%E5%90%A6%E6%9C%89%E7%94%B3%E8%AB%8B%E9%96%8B%E9%80%9A%E6%AD%A4%E7%89%A9%E6%B5%81%E6%96%B9%E5%BC%8F-%E3%80%8F/</url>
-    <content><![CDATA[<p>使用Woocommerce串接綠界服務，選擇門市時遇到『找不到加密金鑰，請確認是否有申請開通此物流方式!』原因如下三點：<br><img src="https://www.ecpay.com.tw/Upload/Announce/201907/images/0355120190716102532.jpg"><br>1.測試模式若勾選，必須使用測試專用的串接資訊，才能順利選擇門市：</p>
-<p>B2C物流類型帳號</p>
-<p>特店編號=2000132</p>
-<p>HashKey=5294y06JbISpM5x9</p>
-<p>HashIV=v77hoKGq4kWxNNIS</p>
-<p>C2C物流類型帳號</p>
-<p>特店編號=2000933</p>
-<p>HashKey=XBERn1YOvpM9nfZc</p>
-<p>HashIV=h1ONHk4P4yqbl5LK</p>
-<p>反之，若未勾選，則必須使用正式申請的串接資訊，才能選擇門市：</p>
-<p>請至廠商管理後台<a href="https://vendor.ecpay.com.tw/%EF%BC%9E%E7%B3%BB%E7%B5%B1%E9%96%8B%E7%99%BC%E7%AE%A1%E7%90%86%EF%BC%9E%E7%B3%BB%E7%B5%B1%E4%BB%8B%E6%8E%A5%E8%A8%AD%E5%AE%9A">https://vendor.ecpay.com.tw/＞系統開發管理＞系統介接設定</a>  就可取得</p>
-<p>2.若需使用物流服務，尚需另外申請，請至<a href="https://www.ecpay.com.tw/IntroTransport/Index%E5%AE%8C%E6%88%90%E7%94%B3%E8%AB%8B%E6%B5%81%E7%A8%8B%E6%89%8D%E8%83%BD%E4%BD%BF%E7%94%A8">https://www.ecpay.com.tw/IntroTransport/Index完成申請流程才能使用</a></p>
-<p>3.待申請完成，請記得當初申請的物流類型是C2C 或 B2C，並設定於上圖的『物流類型』，設定與您申請的相符，才能使用物流服務。</p>
-]]></content>
-      <categories>
-        <category>模組</category>
       </categories>
   </entry>
   <entry>
@@ -172,7 +172,7 @@
 <p>(4)貴司系統收到綠界回傳結果，是否有正確回應1|OK</p>
 <p>(5)因資安政策規定綠界僅提供443 PORT且需使用合法的DomainName進行設定</p>
 <p>上述原因確認完畢，仍然無法排除此問題請提供以下資訊</p>
-<p>並Email至<a href="mailto:&#x74;&#x65;&#x63;&#x68;&#x73;&#x75;&#112;&#112;&#111;&#x72;&#x74;&#64;&#101;&#99;&#112;&#97;&#121;&#x2e;&#99;&#111;&#x6d;&#x2e;&#116;&#119;">&#x74;&#x65;&#x63;&#x68;&#x73;&#x75;&#112;&#112;&#111;&#x72;&#x74;&#64;&#101;&#99;&#112;&#97;&#121;&#x2e;&#99;&#111;&#x6d;&#x2e;&#116;&#119;</a></p>
+<p>並Email至<a href="mailto:&#116;&#101;&#99;&#x68;&#x73;&#x75;&#112;&#x70;&#x6f;&#x72;&#116;&#x40;&#101;&#99;&#112;&#x61;&#x79;&#46;&#x63;&#x6f;&#x6d;&#46;&#116;&#119;">&#116;&#101;&#99;&#x68;&#x73;&#x75;&#112;&#x70;&#x6f;&#x72;&#116;&#x40;&#101;&#99;&#112;&#x61;&#x79;&#46;&#x63;&#x6f;&#x6d;&#46;&#116;&#119;</a></p>
 <p>(1)商店代號(MerchantID)</p>
 <p>(2)廠商交易編號(MerchantTradeNo)</p>
 <p>(3)交易日期(MerchantTradeDate)</p>
