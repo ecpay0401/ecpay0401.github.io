@@ -21,26 +21,22 @@
     var CONFIG = {"hostname":"ecpay0401.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="後台未出現建立物流訂單按鈕及變更門市按鈕，情境一原因:寄件人名稱為空 請至WooCommerce&gt;設定&gt;運送方式&gt;綠界科技超商取貨，修改寄件人名稱後台未出現建立物流訂單按鈕及變更門市按鈕，情境二https:&#x2F;&#x2F;www.ecpay.com.tw&#x2F;Upload&#x2F;Announce&#x2F;201811&#x2F;images&#x2F;647b920181114110725.jpg原因:寄件人名稱超過10字元(5">
+  <meta name="description" content="使用Woocommerce串接綠界服務，選擇門市時遇到『找不到加密金鑰，請確認是否有申請開通此物流方式!』原因如下三點：1.測試模式若勾選，必須使用測試專用的串接資訊，才能順利選擇門市： B2C物流類型帳號 特店編號&#x3D;2000132 HashKey&#x3D;5294y06JbISpM5x9 HashIV&#x3D;v77hoKGq4kWxNNIS C2C物流類型帳號 特店編號&#x3D;2000933 HashKey&#x3D;XBE">
 <meta property="og:type" content="article">
-<meta property="og:title" content="綠界 模組-woocommerce建立物流訂單按鈕未出現常見原因">
-<meta property="og:url" content="https://ecpay0401.github.io/%E7%B6%A0%E7%95%8C-%E6%A8%A1%E7%B5%84woocommerce%E5%BB%BA%E7%AB%8B%E7%89%A9%E6%B5%81%E8%A8%82%E5%96%AE%E6%8C%89%E9%88%95%E6%9C%AA%E5%87%BA%E7%8F%BE%E5%B8%B8%E8%A6%8B%E5%8E%9F%E5%9B%A0/index.html">
+<meta property="og:title" content="綠界-模組woocommerce選擇電子地圖遇到『找不到加密金鑰，請確認是否有申請開通此物流方式!』">
+<meta property="og:url" content="https://ecpay0401.github.io/post/a4ac0757.html">
 <meta property="og:site_name" content="綠界">
-<meta property="og:description" content="後台未出現建立物流訂單按鈕及變更門市按鈕，情境一原因:寄件人名稱為空 請至WooCommerce&gt;設定&gt;運送方式&gt;綠界科技超商取貨，修改寄件人名稱後台未出現建立物流訂單按鈕及變更門市按鈕，情境二https:&#x2F;&#x2F;www.ecpay.com.tw&#x2F;Upload&#x2F;Announce&#x2F;201811&#x2F;images&#x2F;647b920181114110725.jpg原因:寄件人名稱超過10字元(5">
+<meta property="og:description" content="使用Woocommerce串接綠界服務，選擇門市時遇到『找不到加密金鑰，請確認是否有申請開通此物流方式!』原因如下三點：1.測試模式若勾選，必須使用測試專用的串接資訊，才能順利選擇門市： B2C物流類型帳號 特店編號&#x3D;2000132 HashKey&#x3D;5294y06JbISpM5x9 HashIV&#x3D;v77hoKGq4kWxNNIS C2C物流類型帳號 特店編號&#x3D;2000933 HashKey&#x3D;XBE">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://www.ecpay.com.tw/Upload/Announce/201811/images/fff0020181114110259.jpg">
-<meta property="og:image" content="https://www.ecpay.com.tw/Upload/Announce/201811/images/eb78120181114110601.jpg">
-<meta property="og:image" content="https://www.ecpay.com.tw/Upload/Announce/201811/images/df8f620181114110933.jpg">
-<meta property="og:image" content="https://www.ecpay.com.tw/Upload/Announce/201811/images/092ff20181114111113.jpg">
-<meta property="og:image" content="https://www.ecpay.com.tw/Upload/Announce/201811/images/d3c7b20181114111220.jpg">
-<meta property="article:published_time" content="2020-09-04T06:19:58.000Z">
-<meta property="article:modified_time" content="2020-09-07T05:17:21.857Z">
+<meta property="og:image" content="https://www.ecpay.com.tw/Upload/Announce/201907/images/0355120190716102532.jpg">
+<meta property="article:published_time" content="2020-09-07T08:14:26.000Z">
+<meta property="article:modified_time" content="2020-09-07T08:15:50.964Z">
 <meta property="article:author" content="Athena Y">
 <meta property="article:tag" content="綠界,電子地圖無法顯示,綠界 電子地圖無法顯示,綠界 物流-找不到加密金鑰原因,綠界 金流-AIO出現MerchantID-is-Null,綠界 電子發票-商品明細資料格式不正確, 綠界,商品明細資料格式不正確">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.ecpay.com.tw/Upload/Announce/201811/images/fff0020181114110259.jpg">
+<meta name="twitter:image" content="https://www.ecpay.com.tw/Upload/Announce/201907/images/0355120190716102532.jpg">
 
-<link rel="canonical" href="https://ecpay0401.github.io/%E7%B6%A0%E7%95%8C-%E6%A8%A1%E7%B5%84woocommerce%E5%BB%BA%E7%AB%8B%E7%89%A9%E6%B5%81%E8%A8%82%E5%96%AE%E6%8C%89%E9%88%95%E6%9C%AA%E5%87%BA%E7%8F%BE%E5%B8%B8%E8%A6%8B%E5%8E%9F%E5%9B%A0/">
+<link rel="canonical" href="https://ecpay0401.github.io/post/a4ac0757.html">
 
 
 <script id="page-configurations">
@@ -53,7 +49,7 @@
   };
 </script>
 
-  <title>綠界 模組-woocommerce建立物流訂單按鈕未出現常見原因 | 綠界</title>
+  <title>綠界-模組woocommerce選擇電子地圖遇到『找不到加密金鑰，請確認是否有申請開通此物流方式!』 | 綠界</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170083721-2"></script>
     <script>
@@ -211,7 +207,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://ecpay0401.github.io/%E7%B6%A0%E7%95%8C-%E6%A8%A1%E7%B5%84woocommerce%E5%BB%BA%E7%AB%8B%E7%89%A9%E6%B5%81%E8%A8%82%E5%96%AE%E6%8C%89%E9%88%95%E6%9C%AA%E5%87%BA%E7%8F%BE%E5%B8%B8%E8%A6%8B%E5%8E%9F%E5%9B%A0/">
+    <link itemprop="mainEntityOfPage" href="https://ecpay0401.github.io/post/a4ac0757.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -224,7 +220,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          綠界 模組-woocommerce建立物流訂單按鈕未出現常見原因
+          綠界-模組woocommerce選擇電子地圖遇到『找不到加密金鑰，請確認是否有申請開通此物流方式!』
         </h1>
 
         <div class="post-meta">
@@ -233,16 +229,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">發表於</span>
+              
 
-              <time title="創建時間：2020-09-04 14:19:58" itemprop="dateCreated datePublished" datetime="2020-09-04T14:19:58+08:00">2020-09-04</time>
+              <time title="創建時間：2020-09-07 16:14:26 / 修改時間：16:15:50" itemprop="dateCreated datePublished" datetime="2020-09-07T16:14:26+08:00">2020-09-07</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2020-09-07 13:17:21" itemprop="dateModified" datetime="2020-09-07T13:17:21+08:00">2020-09-07</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -271,11 +261,19 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>後台未出現建立物流訂單按鈕及變更門市按鈕，情境一<br><img src="https://www.ecpay.com.tw/Upload/Announce/201811/images/fff0020181114110259.jpg"><br>原因:寄件人名稱為空</p>
-<p>請至WooCommerce&gt;設定&gt;運送方式&gt;綠界科技超商取貨，修改寄件人名稱<br><img src="https://www.ecpay.com.tw/Upload/Announce/201811/images/eb78120181114110601.jpg"><br>後台未出現建立物流訂單按鈕及變更門市按鈕，情境二<br><img src=""><a target="_blank" rel="noopener" href="https://www.ecpay.com.tw/Upload/Announce/201811/images/647b920181114110725.jpg">https://www.ecpay.com.tw/Upload/Announce/201811/images/647b920181114110725.jpg</a><br>原因:寄件人名稱超過10字元(5個中文字或10個英文字)</p>
-<p>請至WooCommerce&gt;設定&gt;運送方式&gt;綠界科技超商取貨，修改寄件人名稱<br><img src="https://www.ecpay.com.tw/Upload/Announce/201811/images/df8f620181114110933.jpg"></p>
-<p>後台未出現建立物流訂單按鈕及變更門市按鈕，情境三<br><img src="https://www.ecpay.com.tw/Upload/Announce/201811/images/092ff20181114111113.jpg"><br>原因:使用萊爾富C2C、統一超商C2C未設定寄件人手機</p>
-<p>請至WooCommerce&gt;設定&gt;運送方式&gt;綠界科技超商取貨，填入寄件人手機<br><img src="https://www.ecpay.com.tw/Upload/Announce/201811/images/d3c7b20181114111220.jpg"></p>
+        <p>使用Woocommerce串接綠界服務，選擇門市時遇到『找不到加密金鑰，請確認是否有申請開通此物流方式!』原因如下三點：<br><img src="https://www.ecpay.com.tw/Upload/Announce/201907/images/0355120190716102532.jpg"><br>1.測試模式若勾選，必須使用測試專用的串接資訊，才能順利選擇門市：</p>
+<p>B2C物流類型帳號</p>
+<p>特店編號=2000132</p>
+<p>HashKey=5294y06JbISpM5x9</p>
+<p>HashIV=v77hoKGq4kWxNNIS</p>
+<p>C2C物流類型帳號</p>
+<p>特店編號=2000933</p>
+<p>HashKey=XBERn1YOvpM9nfZc</p>
+<p>HashIV=h1ONHk4P4yqbl5LK</p>
+<p>反之，若未勾選，則必須使用正式申請的串接資訊，才能選擇門市：</p>
+<p>請至廠商管理後台<a target="_blank" rel="noopener" href="https://vendor.ecpay.com.tw/%EF%BC%9E%E7%B3%BB%E7%B5%B1%E9%96%8B%E7%99%BC%E7%AE%A1%E7%90%86%EF%BC%9E%E7%B3%BB%E7%B5%B1%E4%BB%8B%E6%8E%A5%E8%A8%AD%E5%AE%9A">https://vendor.ecpay.com.tw/＞系統開發管理＞系統介接設定</a>  就可取得</p>
+<p>2.若需使用物流服務，尚需另外申請，請至<a target="_blank" rel="noopener" href="https://www.ecpay.com.tw/IntroTransport/Index%E5%AE%8C%E6%88%90%E7%94%B3%E8%AB%8B%E6%B5%81%E7%A8%8B%E6%89%8D%E8%83%BD%E4%BD%BF%E7%94%A8">https://www.ecpay.com.tw/IntroTransport/Index完成申請流程才能使用</a></p>
+<p>3.待申請完成，請記得當初申請的物流類型是C2C 或 B2C，並設定於上圖的『物流類型』，設定與您申請的相符，才能使用物流服務。</p>
 
     </div>
 
@@ -291,12 +289,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/%E7%B6%A0%E7%95%8C-%E9%9B%BB%E5%AD%90%E7%99%BC%E7%A5%A8-%E6%AA%A2%E6%9F%A5%E7%A2%BC%E7%89%88%E5%92%8CJSON%E7%89%88API%E5%B7%AE%E7%95%B0/" rel="prev" title="綠界 電子發票-檢查碼版和JSON版API差異">
-      <i class="fa fa-chevron-left"></i> 綠界 電子發票-檢查碼版和JSON版API差異
+    <a href="/post/e19c75cf.html" rel="prev" title="綠界-電子發票 商品明細資料格式不正確">
+      <i class="fa fa-chevron-left"></i> 綠界-電子發票 商品明細資料格式不正確
     </a></div>
       <div class="post-nav-item">
-    <a href="/%E7%B6%A0%E7%95%8C-%E9%87%91%E6%B5%81-AIO%E5%87%BA%E7%8F%BEMerchantID-is-Null/" rel="next" title="綠界 金流-AIO出現MerchantID is Null">
-      綠界 金流-AIO出現MerchantID is Null <i class="fa fa-chevron-right"></i>
+    <a href="/post/23414.html" rel="next" title="綠界-模組woocommerce交易失敗！商店尚未開啟收款服務">
+      綠界-模組woocommerce交易失敗！商店尚未開啟收款服務 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>

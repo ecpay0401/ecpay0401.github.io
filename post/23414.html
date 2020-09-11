@@ -21,23 +21,23 @@
     var CONFIG = {"hostname":"ecpay0401.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="當信用卡消費產生時會進行信用卡授權，此時會佔用卡片上的可用額度，但實際上並非已請&#x2F;扣款。 也就是說，當消費者收到消費簡訊通知、APP通知時 待商家進行關帳動作後，綠界才會協助將資料送給銀行請款。此時才算完成扣款動作喔! Q:為什麼訂單顯示『3D授權未於時間內完成，故交易失敗』，消費者打去發卡銀行問，銀行的回覆卻是授權成功? A:因為綠界未收到銀行授權成功回覆，會將此單判定為失敗，判定失敗的訂單，將">
+  <meta name="description" content="此錯誤顯示您的『模式』與設定的『MerchantID、HashKey、HashIV』搭配有誤，請參考下述調整。 測試模式必須使用測試專用的MerchantID、HashKey、HashIV，並勾選測試模式，才能順利建立訂單。 正式模式必須使用正式申請的MerchantID、HashKey、HashIV，並取消勾選測試模式，才能順利建立訂單">
 <meta property="og:type" content="article">
-<meta property="og:title" content="綠界 金流-信用卡授權等於扣款成功嗎?">
-<meta property="og:url" content="https://ecpay0401.github.io/%E7%B6%A0%E7%95%8C-%E9%87%91%E6%B5%81-%E4%BF%A1%E7%94%A8%E5%8D%A1%E6%8E%88%E6%AC%8A%E7%AD%89%E6%96%BC%E6%89%A3%E6%AC%BE%E6%88%90%E5%8A%9F%E5%97%8E/index.html">
+<meta property="og:title" content="綠界-模組woocommerce交易失敗！商店尚未開啟收款服務">
+<meta property="og:url" content="https://ecpay0401.github.io/post/23414.html">
 <meta property="og:site_name" content="綠界">
-<meta property="og:description" content="當信用卡消費產生時會進行信用卡授權，此時會佔用卡片上的可用額度，但實際上並非已請&#x2F;扣款。 也就是說，當消費者收到消費簡訊通知、APP通知時 待商家進行關帳動作後，綠界才會協助將資料送給銀行請款。此時才算完成扣款動作喔! Q:為什麼訂單顯示『3D授權未於時間內完成，故交易失敗』，消費者打去發卡銀行問，銀行的回覆卻是授權成功? A:因為綠界未收到銀行授權成功回覆，會將此單判定為失敗，判定失敗的訂單，將">
+<meta property="og:description" content="此錯誤顯示您的『模式』與設定的『MerchantID、HashKey、HashIV』搭配有誤，請參考下述調整。 測試模式必須使用測試專用的MerchantID、HashKey、HashIV，並勾選測試模式，才能順利建立訂單。 正式模式必須使用正式申請的MerchantID、HashKey、HashIV，並取消勾選測試模式，才能順利建立訂單">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://www.ecpay.com.tw/Upload/Announce/201910/images/a5df420191028180007.png">
-<meta property="og:image" content="https://www.ecpay.com.tw/Upload/Announce/201910/images/49d3320191028180019.png">
-<meta property="article:published_time" content="2020-09-04T03:41:05.000Z">
-<meta property="article:modified_time" content="2020-09-07T05:17:21.877Z">
+<meta property="og:image" content="https://www.ecpay.com.tw/Upload/Announce/201805/images/17a8a20180517101405.jpg">
+<meta property="og:image" content="https://www.ecpay.com.tw/Upload/Announce/201805/images/a9dde20180517101531.jpg">
+<meta property="article:published_time" content="2020-09-07T09:25:24.000Z">
+<meta property="article:modified_time" content="2020-09-07T09:26:18.488Z">
 <meta property="article:author" content="Athena Y">
 <meta property="article:tag" content="綠界,電子地圖無法顯示,綠界 電子地圖無法顯示,綠界 物流-找不到加密金鑰原因,綠界 金流-AIO出現MerchantID-is-Null,綠界 電子發票-商品明細資料格式不正確, 綠界,商品明細資料格式不正確">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.ecpay.com.tw/Upload/Announce/201910/images/a5df420191028180007.png">
+<meta name="twitter:image" content="https://www.ecpay.com.tw/Upload/Announce/201805/images/17a8a20180517101405.jpg">
 
-<link rel="canonical" href="https://ecpay0401.github.io/%E7%B6%A0%E7%95%8C-%E9%87%91%E6%B5%81-%E4%BF%A1%E7%94%A8%E5%8D%A1%E6%8E%88%E6%AC%8A%E7%AD%89%E6%96%BC%E6%89%A3%E6%AC%BE%E6%88%90%E5%8A%9F%E5%97%8E/">
+<link rel="canonical" href="https://ecpay0401.github.io/post/23414.html">
 
 
 <script id="page-configurations">
@@ -50,7 +50,7 @@
   };
 </script>
 
-  <title>綠界 金流-信用卡授權等於扣款成功嗎? | 綠界</title>
+  <title>綠界-模組woocommerce交易失敗！商店尚未開啟收款服務 | 綠界</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170083721-2"></script>
     <script>
@@ -208,7 +208,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://ecpay0401.github.io/%E7%B6%A0%E7%95%8C-%E9%87%91%E6%B5%81-%E4%BF%A1%E7%94%A8%E5%8D%A1%E6%8E%88%E6%AC%8A%E7%AD%89%E6%96%BC%E6%89%A3%E6%AC%BE%E6%88%90%E5%8A%9F%E5%97%8E/">
+    <link itemprop="mainEntityOfPage" href="https://ecpay0401.github.io/post/23414.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -221,7 +221,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          綠界 金流-信用卡授權等於扣款成功嗎?
+          綠界-模組woocommerce交易失敗！商店尚未開啟收款服務
         </h1>
 
         <div class="post-meta">
@@ -230,23 +230,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">發表於</span>
+              
 
-              <time title="創建時間：2020-09-04 11:41:05" itemprop="dateCreated datePublished" datetime="2020-09-04T11:41:05+08:00">2020-09-04</time>
+              <time title="創建時間：2020-09-07 17:25:24 / 修改時間：17:26:18" itemprop="dateCreated datePublished" datetime="2020-09-07T17:25:24+08:00">2020-09-07</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2020-09-07 13:17:21" itemprop="dateModified" datetime="2020-09-07T13:17:21+08:00">2020-09-07</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分類於</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%87%91%E6%B5%81/" itemprop="url" rel="index"><span itemprop="name">金流</span></a>
+                  <a href="/categories/%E6%A8%A1%E7%B5%84/" itemprop="url" rel="index"><span itemprop="name">模組</span></a>
                 </span>
             </span>
 
@@ -268,13 +262,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>當信用卡消費產生時會進行信用卡授權，此時會佔用卡片上的可用額度，但實際上並非已請/扣款。</p>
-<p>也就是說，當消費者收到消費簡訊通知、APP通知時<br><img src="https://www.ecpay.com.tw/Upload/Announce/201910/images/a5df420191028180007.png"></p>
-<p><img src="https://www.ecpay.com.tw/Upload/Announce/201910/images/49d3320191028180019.png"><br>待商家進行關帳動作後，綠界才會協助將資料送給銀行請款。此時才算完成扣款動作喔!</p>
-<p>Q:為什麼訂單顯示『3D授權未於時間內完成，故交易失敗』，消費者打去發卡銀行問，銀行的回覆卻是授權成功?</p>
-<p>A:因為綠界未收到銀行授權成功回覆，會將此單判定為失敗，判定失敗的訂單，將不會向銀行請款。</p>
-<p>Q:明明交易失敗，為什麼帳單顯示這筆交易明細</p>
-<p>A:因為各家銀行的通知方式或帳單顯示方式不同，可能會在”未請款”帳單中出現該筆交易，但不代表已扣款成功。</p>
+        <p>此錯誤顯示您的『模式』與設定的『MerchantID、HashKey、HashIV』搭配有誤，請參考下述調整。</p>
+<p>測試模式必須使用測試專用的MerchantID、HashKey、HashIV，並勾選測試模式，才能順利建立訂單。</p>
+<p><img src="https://www.ecpay.com.tw/Upload/Announce/201805/images/17a8a20180517101405.jpg"><br>正式模式必須使用正式申請的MerchantID、HashKey、HashIV，並取消勾選測試模式，才能順利建立訂單<br><img src="https://www.ecpay.com.tw/Upload/Announce/201805/images/a9dde20180517101531.jpg"></p>
 
     </div>
 
@@ -290,13 +280,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/%E7%B6%A0%E7%95%8C-%E9%87%91%E6%B5%81-%E5%95%86%E5%BA%97%E6%9C%AA%E9%96%8B%E5%95%9F%E6%94%B6%E6%AC%BE%E6%9C%8D%E5%8B%99%E5%8E%9F%E5%9B%A0/" rel="prev" title="綠界 金流-商店未開啟收款服務原因">
-      <i class="fa fa-chevron-left"></i> 綠界 金流-商店未開啟收款服務原因
+    <a href="/post/a4ac0757.html" rel="prev" title="綠界-模組woocommerce選擇電子地圖遇到『找不到加密金鑰，請確認是否有申請開通此物流方式!』">
+      <i class="fa fa-chevron-left"></i> 綠界-模組woocommerce選擇電子地圖遇到『找不到加密金鑰，請確認是否有申請開通此物流方式!』
     </a></div>
-      <div class="post-nav-item">
-    <a href="/%E7%B6%A0%E7%95%8C-%E9%87%91%E6%B5%81-%E7%AB%99%E5%85%A7%E4%BB%98%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C/" rel="next" title="綠界 金流-站內付常見問題">
-      綠界 金流-站內付常見問題 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
