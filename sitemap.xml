@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ecpay0401.github.io/author_name/506dc01e/</loc>
+    
+    <lastmod>2020-09-14</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ecpay0401.github.io/author_name/b3f56138/</loc>
     
     <lastmod>2020-09-14</lastmod>
@@ -100,13 +107,6 @@
   </url>
   
   <url>
-    <loc>https://ecpay0401.github.io/author_name/51510/</loc>
-    
-    <lastmod>2020-09-07</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://ecpay0401.github.io/author_name/27660/</loc>
     
     <lastmod>2020-09-07</lastmod>
@@ -166,6 +166,13 @@
   
   <url>
     <loc>https://ecpay0401.github.io/tags/%E7%B6%A0%E7%95%8C%E9%9B%BB%E5%AD%90%E5%9C%B0%E5%9C%96%E7%84%A1%E6%B3%95%E9%A1%AF%E7%A4%BA/</loc>
+    <lastmod>2020-09-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ecpay0401.github.io/tags/%E7%B6%A0%E7%95%8CAIO%E5%87%BA%E7%8F%BEMerchantID-is-Null/</loc>
     <lastmod>2020-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
