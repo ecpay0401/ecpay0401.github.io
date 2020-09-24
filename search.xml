@@ -3,7 +3,7 @@
   <entry>
     <title>Hello World</title>
     <url>/author_name/16107/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
@@ -21,7 +21,7 @@
   <entry>
     <title>綠界 模組woocommerce交易失敗!TradeAmount Error</title>
     <url>/author_name/21015/</url>
-    <content><![CDATA[<p>會產生該錯誤是由於綠界科技不支援小數點金額交易，</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>會產生該錯誤是由於綠界科技不支援小數點金額交易，</p>
 <p>而Woocommerce預設會有小數點所導致，還請參考以下路徑調整小數點設定並儲存。<br><img src="https://www.ecpay.com.tw/Upload/Announce/201803/images/a6d9220180313094357.jpg"></p>
 <p><img src="https://www.ecpay.com.tw/Upload/Announce/201803/images/2d74920180313094434.jpg"></p>
 ]]></content>
@@ -32,7 +32,7 @@
   <entry>
     <title>綠界-模組woocommerce交易失敗！商店尚未開啟收款服務</title>
     <url>/author_name/b3f56138/</url>
-    <content><![CDATA[<p>此錯誤顯示您的『模式』與設定的『MerchantID、HashKey、HashIV』搭配有誤，請參考下述調整。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>此錯誤顯示您的『模式』與設定的『MerchantID、HashKey、HashIV』搭配有誤，請參考下述調整。</p>
 <p>測試模式必須使用測試專用的MerchantID、HashKey、HashIV，並勾選測試模式，才能順利建立訂單。</p>
 <p><img src="https://www.ecpay.com.tw/Upload/Announce/201805/images/17a8a20180517101405.jpg"><br>正式模式必須使用正式申請的MerchantID、HashKey、HashIV，並取消勾選測試模式，才能順利建立訂單<br><img src="https://www.ecpay.com.tw/Upload/Announce/201805/images/a9dde20180517101531.jpg"></p>
 ]]></content>
@@ -46,7 +46,7 @@
   <entry>
     <title>綠界 模組-woocommerce建立物流訂單按鈕未出現常見原因</title>
     <url>/author_name/27660/</url>
-    <content><![CDATA[<p>後台未出現建立物流訂單按鈕及變更門市按鈕，情境一<br><img src="https://www.ecpay.com.tw/Upload/Announce/201811/images/fff0020181114110259.jpg"><br>原因:寄件人名稱為空</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>後台未出現建立物流訂單按鈕及變更門市按鈕，情境一<br><img src="https://www.ecpay.com.tw/Upload/Announce/201811/images/fff0020181114110259.jpg"><br>原因:寄件人名稱為空</p>
 <p>請至WooCommerce&gt;設定&gt;運送方式&gt;綠界科技超商取貨，修改寄件人名稱<br><img src="https://www.ecpay.com.tw/Upload/Announce/201811/images/eb78120181114110601.jpg"><br>後台未出現建立物流訂單按鈕及變更門市按鈕，情境二<br><img src=""><a href="https://www.ecpay.com.tw/Upload/Announce/201811/images/647b920181114110725.jpg">https://www.ecpay.com.tw/Upload/Announce/201811/images/647b920181114110725.jpg</a><br>原因:寄件人名稱超過10字元(5個中文字或10個英文字)</p>
 <p>請至WooCommerce&gt;設定&gt;運送方式&gt;綠界科技超商取貨，修改寄件人名稱<br><img src="https://www.ecpay.com.tw/Upload/Announce/201811/images/df8f620181114110933.jpg"></p>
 <p>後台未出現建立物流訂單按鈕及變更門市按鈕，情境三<br><img src="https://www.ecpay.com.tw/Upload/Announce/201811/images/092ff20181114111113.jpg"><br>原因:使用萊爾富C2C、統一超商C2C未設定寄件人手機</p>
@@ -59,7 +59,7 @@
   <entry>
     <title>綠界-模組woocommerce選擇電子地圖遇到『找不到加密金鑰，請確認是否有申請開通此物流方式!』</title>
     <url>/author_name/a4ac0757/</url>
-    <content><![CDATA[<p>使用Woocommerce串接綠界服務，選擇門市時遇到『找不到加密金鑰，請確認是否有申請開通此物流方式!』原因如下三點：<br><img src="https://www.ecpay.com.tw/Upload/Announce/201907/images/0355120190716102532.jpg"><br>1.測試模式若勾選，必須使用測試專用的串接資訊，才能順利選擇門市：</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>使用Woocommerce串接綠界服務，選擇門市時遇到『找不到加密金鑰，請確認是否有申請開通此物流方式!』原因如下三點：<br><img src="https://www.ecpay.com.tw/Upload/Announce/201907/images/0355120190716102532.jpg"><br>1.測試模式若勾選，必須使用測試專用的串接資訊，才能順利選擇門市：</p>
 <p>B2C物流類型帳號</p>
 <p>特店編號=2000132</p>
 <p>HashKey=5294y06JbISpM5x9</p>
@@ -80,7 +80,7 @@
   <entry>
     <title>綠界-物流 找不到加密金鑰原因</title>
     <url>/author_name/c64fd064/</url>
-    <content><![CDATA[<p>物流找不到加密金鑰原因:</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>物流找不到加密金鑰原因:</p>
 <p>串接物流API時，若收到以下錯誤訊息，主要發生於以下兩種情境：</p>
 <p>1.串接電子地圖(<a href="https://logistics.ecpay.com.tw/Express/map">https://logistics.ecpay.com.tw/Express/map</a>)</p>
 <p>原因：造成此錯誤訊息的主因是MerchantID與呼叫的環境(API URL) 或 LogisticsSubType (物流子類型) 沒有正確配對<br><img src="https://www.ecpay.com.tw/Upload/Announce/201909/images/dd8af20190911175209.JPG"></p>
@@ -106,7 +106,7 @@
   <entry>
     <title>綠界-物流 購物車新流程操作影片</title>
     <url>/author_name/69f783f/</url>
-    <content><![CDATA[<p>購物車新流程操作影片如下:</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>購物車新流程操作影片如下:</p>
 <video src='https://streamable.com/9llhbr' type='video/mp4' controls='controls'  width='100%' height='100%'>
 </video>]]></content>
       <categories>
@@ -119,7 +119,7 @@
   <entry>
     <title>綠界-物流 電子地圖無法顯示</title>
     <url>/author_name/fa5bf50d/</url>
-    <content><![CDATA[<p>最新發佈的 Chrome 84  更新 Samesite Cookie 政策</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>最新發佈的 Chrome 84  更新 Samesite Cookie 政策</p>
 <p>此政策下，所有cookies將需要清楚標示Samesite值,</p>
 <p>若未標示,Chrome會強制將Samesite指定為LAX </p>
 <p>若您的網站未指定Samesite=None將可能出現無法預期的錯誤。</p>
@@ -148,7 +148,7 @@
   <entry>
     <title>綠界 金流-AIO出現MerchantID is Null</title>
     <url>/author_name/506dc01e/</url>
-    <content><![CDATA[<p>若IOS行動裝置無法結帳，出現MerchantID is Null 畫面:</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>若IOS行動裝置無法結帳，出現MerchantID is Null 畫面:</p>
 <p><img src="https://www.ecpay.com.tw/Upload/Announce/201908/images/54d7720190808160810.jpg"><br>原因是消費者使用IOS行動裝置中的 Facebook 、LINE等APP 直接開啟您的商店連結進行結帳，</p>
 <p>因為APP無法接受開新分頁或另開視窗以致表單資料無法POST給綠界故無法完成交易。</p>
 <p>若您的系統設計是使用開新分頁或另開視窗，建議您將Form 表單的屬性 target=”_blank”移除</p>
@@ -164,7 +164,7 @@
   <entry>
     <title>綠界-金流 SSL certificate problem: certificate has expired</title>
     <url>/author_name/24815/</url>
-    <content><![CDATA[<p>當建立(金流、物流、電子發票)訂單失敗且出現訊息：<br>●SSL certificate problem: certificate has expired<br>●SSL certificate problem: unable to get local issuer certificate<br>●sun.security.validator.ValidatorException: PKIX path building failed:<br>sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target<br><img src="https://www.ecpay.com.tw/Upload/Announce/202006/images/b3d4c20200601170627.PNG"><br><img src="https://www.ecpay.com.tw/Upload/Announce/202006/images/13ce320200609133525.PNG"><br>表示您的伺服器(server)根憑證無法自動更新出現此錯誤，請下載根憑證後手動更新：</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>當建立(金流、物流、電子發票)訂單失敗且出現訊息：<br>●SSL certificate problem: certificate has expired<br>●SSL certificate problem: unable to get local issuer certificate<br>●sun.security.validator.ValidatorException: PKIX path building failed:<br>sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target<br><img src="https://www.ecpay.com.tw/Upload/Announce/202006/images/b3d4c20200601170627.PNG"><br><img src="https://www.ecpay.com.tw/Upload/Announce/202006/images/13ce320200609133525.PNG"><br>表示您的伺服器(server)根憑證無法自動更新出現此錯誤，請下載根憑證後手動更新：</p>
 <p><a href="https://crt.sh/?d=1720081">https://crt.sh/?d=1720081</a></p>
 <p>檔名: 1720081.crt</p>
 <p>如需更多說明請參考以下文章</p>
@@ -177,7 +177,7 @@
   <entry>
     <title>綠界 金流-信用卡授權等於扣款成功嗎?</title>
     <url>/author_name/7501/</url>
-    <content><![CDATA[<p>當信用卡消費產生時會進行信用卡授權，此時會佔用卡片上的可用額度，但實際上並非已請/扣款。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>當信用卡消費產生時會進行信用卡授權，此時會佔用卡片上的可用額度，但實際上並非已請/扣款。</p>
 <p>也就是說，當消費者收到消費簡訊通知、APP通知時<br><img src="https://www.ecpay.com.tw/Upload/Announce/201910/images/a5df420191028180007.png"></p>
 <p><img src="https://www.ecpay.com.tw/Upload/Announce/201910/images/49d3320191028180019.png"><br>待商家進行關帳動作後，綠界才會協助將資料送給銀行請款。此時才算完成扣款動作喔!</p>
 <p>Q:為什麼訂單顯示『3D授權未於時間內完成，故交易失敗』，消費者打去發卡銀行問，銀行的回覆卻是授權成功?</p>
@@ -192,7 +192,7 @@
   <entry>
     <title>綠界 金流-商店未開啟收款服務原因</title>
     <url>/author_name/32720/</url>
-    <content><![CDATA[<p>金流:商店未開啟收款服務原因<br>1.請確認您的API網址，</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>金流:商店未開啟收款服務原因<br>1.請確認您的API網址，</p>
 <p>若為<a href="https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut/V5">https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut/V5</a></p>
 <p>表示在測試環境，需使用測試環境的 MerchantID、HashIV、HashKey</p>
 <p>MerchantID應填入 2000132</p>
@@ -212,7 +212,7 @@
   <entry>
     <title>綠界-金流 常見付款狀態未更新原因</title>
     <url>/author_name/23316/</url>
-    <content><![CDATA[<p>常見付款狀態未更新原因<br>若消費者已經付款，綠界廠商管理後台也已更新付款</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>常見付款狀態未更新原因<br>若消費者已經付款，綠界廠商管理後台也已更新付款</p>
 <p>但您的系統後台(Woocommerec、Opencart、Shopline、QDM、美安….平台)</p>
 <p>付款狀態未被更新，請程式人員檢查以下設定:</p>
 <p>(1)接收付款通知的伺服器是否異常</p>
@@ -223,7 +223,7 @@
 <p>(4)貴司系統收到綠界回傳結果，是否有正確回應1|OK</p>
 <p>(5)因資安政策規定綠界僅提供443 PORT且需使用合法的DomainName進行設定</p>
 <p>上述原因確認完畢，仍然無法排除此問題請提供以下資訊</p>
-<p>並Email至<a href="mailto:&#116;&#x65;&#x63;&#x68;&#115;&#x75;&#112;&#x70;&#x6f;&#114;&#116;&#64;&#101;&#99;&#x70;&#97;&#x79;&#x2e;&#99;&#111;&#x6d;&#x2e;&#116;&#119;">&#116;&#x65;&#x63;&#x68;&#115;&#x75;&#112;&#x70;&#x6f;&#114;&#116;&#64;&#101;&#99;&#x70;&#97;&#x79;&#x2e;&#99;&#111;&#x6d;&#x2e;&#116;&#119;</a></p>
+<p>並Email至<a href="mailto:&#x74;&#x65;&#x63;&#104;&#x73;&#117;&#112;&#x70;&#111;&#x72;&#116;&#64;&#101;&#99;&#x70;&#97;&#x79;&#46;&#99;&#x6f;&#109;&#46;&#x74;&#x77;">&#x74;&#x65;&#x63;&#104;&#x73;&#117;&#112;&#x70;&#111;&#x72;&#116;&#64;&#101;&#99;&#x70;&#97;&#x79;&#46;&#99;&#x6f;&#109;&#46;&#x74;&#x77;</a></p>
 <p>(1)商店代號(MerchantID)</p>
 <p>(2)廠商交易編號(MerchantTradeNo)</p>
 <p>(3)交易日期(MerchantTradeDate)</p>
@@ -236,7 +236,7 @@
   <entry>
     <title>綠界 金流-站內付常見問題</title>
     <url>/author_name/21165/</url>
-    <content><![CDATA[<p>站內付常見問題<br>綠界科技為第三方支付公司，站內付模式為iframe框架所構成，行動裝置上會以開新視窗方式進行交易</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>站內付常見問題<br>綠界科技為第三方支付公司，站內付模式為iframe框架所構成，行動裝置上會以開新視窗方式進行交易</p>
 <p>Q:為什麼按下付款按鈕沒有反應?</p>
 <p>A:請確認您的瀏覽器是否阻擋開新視窗</p>
 <p>Q:為什麼卡號填完以後出現”交易已逾時，請重新交易”<br><img src="https://www.ecpay.com.tw/Upload/Announce/201905/images/baa3320190514134748.PNG"><br>A:請確認您的瀏覽器cookie設置是否封鎖第三方cookie/禁止第三方網站儲存及讀取cookie資料</p>
@@ -252,7 +252,7 @@
   <entry>
     <title>綠界-金流 綠界帳戶餘額低於退刷金額或為負數導致無法退刷及建立物流訂單</title>
     <url>/author_name/84cd5df7/</url>
-    <content><![CDATA[<p>若您的帳戶餘額低於退刷金額為負數</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>若您的帳戶餘額低於退刷金額為負數</p>
 <p>將無法進行退刷以及建立物流訂單<br><img src="https://www.ecpay.com.tw/Upload/Announce/201906/images/c2ea620190620114048.PNG"><br>請至綠界廠商管理後台進行預付動作，</p>
 <p>如需進行退刷作業，服務項目請選擇”信用卡退刷款” 請存入足夠退刷的金額</p>
 <p>如需進行物流費用預存，服務項目請選擇”預付物流款”請存入足夠每周二結算物流費用使用金額。<br><img src="https://www.ecpay.com.tw/Upload/Announce/201906/images/3776520190620112734.JPG"></p>
@@ -267,7 +267,7 @@
   <entry>
     <title>綠界-電子發票 商品明細資料格式不正確</title>
     <url>/author_name/e19c75cf/</url>
-    <content><![CDATA[<p>商品明細資料格式不正確</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>商品明細資料格式不正確</p>
 <p>此錯誤訊息顯示商品明細『項次』對照有誤，請參考下方，每個參數都需有相同的項目數，若多/少一個就會遇到此錯誤。</p>
 <p>ItemCount=1|2|1|1</p>
 <p>ItemPrice=20|30|40|-20</p>
@@ -282,7 +282,7 @@
   <entry>
     <title>綠界 電子發票-檢查碼版和JSON版API差異</title>
     <url>/author_name/36931/</url>
-    <content><![CDATA[<p>電子發票API兩版本差異參考：<br><img src="https://i.imgur.com/0XdFEQm.jpg"></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>電子發票API兩版本差異參考：<br><img src="https://i.imgur.com/0XdFEQm.jpg"></p>
 ]]></content>
       <categories>
         <category>電子發票</category>
@@ -291,7 +291,7 @@
   <entry>
     <title>綠界-電子發票 驗證發票金額發現錯誤，與商品合計金額不符的可能原因</title>
     <url>/author_name/5280d3ef/</url>
-    <content><![CDATA[<p>驗證發票金額發現錯誤，與商品合計金額不符的可能原因</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>驗證發票金額發現錯誤，與商品合計金額不符的可能原因</p>
 <p>※請留意ItemAmount需統一為含稅金額，所以商品金額需符合以下規則。</p>
 <p>1.當vat=1 ItemPrice(含稅)*ItemCount=ItemAmount(含稅) 各項總合並四捨五入=salesAmount(含稅)</p>
 <p>EX：</p>
