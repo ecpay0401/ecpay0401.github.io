@@ -29,9 +29,10 @@
 <meta property="og:description" content="此政策下，所有cookies將需要清楚標示Samesite值, 若未標示,Chrome會強制將Samesite指定為LAX  若您的網站未指定Samesite&#x3D;None將可能出現無法預期的錯誤。 Samesite&#x3D;Strict    Samesite&#x3D;LAX   Samesite&#x3D;None (允許跨網站存取) 例如:結帳完被登出、物流電子地圖無法將資料回寫 如何自行檢測?開啟您的網站&gt;Ct">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://www.ecpay.com.tw/Upload/Announce/202008/images/4b8da20200820111424.png">
-<meta property="og:image" content="https://i.imgur.com/NtqX1lf.png">
+<meta property="og:image" content="https://www.ecpay.com.tw/Upload/Announce/202010/images/6456420201016173651.png">
+<meta property="og:image" content="https://www.ecpay.com.tw/Upload/Announce/202008/images/c987020200820112538.png">
 <meta property="article:published_time" content="2020-09-05T08:56:08.000Z">
-<meta property="article:modified_time" content="2020-11-26T03:25:07.449Z">
+<meta property="article:modified_time" content="2020-11-26T03:34:14.419Z">
 <meta property="article:author" content="Athena Y">
 <meta property="article:tag" content="綠界電子地圖無法顯示">
 <meta name="twitter:card" content="summary">
@@ -238,7 +239,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2020-11-26 11:25:07" itemprop="dateModified" datetime="2020-11-26T11:25:07+08:00">2020-11-26</time>
+                <time title="修改時間：2020-11-26 11:34:14" itemprop="dateModified" datetime="2020-11-26T11:34:14+08:00">2020-11-26</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -276,16 +277,23 @@
 <p>如何自行檢測?<br>開啟您的網站&gt;Ctrl+Shift+I</p>
 <p>如出現下圖表示未設置，預設為(LAX)</p>
 <p>（請注意，在Chrome 85之前，每次加載頁面時，DevTools中都會向JavaScript控制台發送有關不兼容Cookie的消息。在Chrome 85中，這些消息已從控制台中刪除。)</p>
-<p><img src="https://www.ecpay.com.tw/Upload/Announce/202008/images/4b8da20200820111424.png"></p>
+<p><img src="https://www.ecpay.com.tw/Upload/Announce/202008/images/4b8da20200820111424.png"><br><img src="https://www.ecpay.com.tw/Upload/Announce/202010/images/6456420201016173651.png"></p>
 <p>自家網站的調整方式<br>1.使用HTTPS 加強交易雙方安全</p>
 <p>2.將Set-Cookie 的行為都加上 SameSite 的屬性</p>
-<p>消費者端暫時的解決方式<br>Step 1. 於 Chrome 瀏覽器網址列輸入 chrome://flags<br>Step 2. 搜尋Samesite<br>Step 3. 將以下三個設定設定為Disabled<br>Step 4. 按下Relaunch,重啟瀏覽器</p>
-<p><img src="https://i.imgur.com/NtqX1lf.png"></p>
+<p>SameSite=None + HTTPS：允許跨網域存取，但是若沒 HTTPS 則預設「拒絕」跨網域存取<br>無效：Set-Cookie: remote_session=abc123; SameSite=None<br>有效：Set-Cookie: remote_session=abc123; SameSite=None; Secure</p>
+<p>PHP 7.2 以前的 SameStie Cookie 寫法<br>header(‘Set-Cookie: cross-site-cookie=name; SameSite=None; Secure’);</p>
+<p>header(‘Set-Cookie: cookie2=name; SameSite=None; Secure’, false);</p>
+<p>PHP 7.3 以後的 SameStie Cookie 寫法<br>setcookie(‘cross-site-cookie’, ‘name’, [‘samesite’ =&gt; ‘None’, ‘secure’ =&gt; true]);</p>
+<p>setcookie（’cookie2’，’name’，[‘samesite’=&gt;’None’，’secure’=&gt; true]）;</p>
+<p>設定 .htaccess<br>Header always edit Set-Cookie ^(.<em>)$ “$1;HttpOnly;Secure;SameSite=None”<br>設定 Apache httpd.conf<br>Header always edit Set-Cookie ^(.</em>)$ “$1;HttpOnly;Secure;SameSite=None”</p>
+<p>設定完成，請記得重啟服務及清除瀏覽記錄。</p>
+<p>網站還沒調整好，消費者端暫時的解決方式<br>Step 1. 於 Chrome 瀏覽器網址列輸入 chrome://flags<br>Step 2. 搜尋Samesite<br>Step 3. 將以下三個設定設定為Disabled<br>Step 4. 按下Relaunch,重啟瀏覽器<br><img src="https://www.ecpay.com.tw/Upload/Announce/202008/images/c987020200820112538.png"></p>
 <p>Safari</p>
 <p>關閉 防止跨網站的追蹤功能&gt;重啟瀏覽器</p>
 <p>參考:</p>
 <p><a target="_blank" rel="noopener" href="https://www.chromium.org/updates/same-site">https://www.chromium.org/updates/same-site</a></p>
 <p><a target="_blank" rel="noopener" href="https://blog.chromium.org/2020/02/samesite-cookie-changes-in-february.html">https://blog.chromium.org/2020/02/samesite-cookie-changes-in-february.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://docs.microsoft.com/zh-tw/aspnet/core/security/samesite?view=aspnetcore-3.1">https://docs.microsoft.com/zh-tw/aspnet/core/security/samesite?view=aspnetcore-3.1</a></p>
 
     </div>
 
