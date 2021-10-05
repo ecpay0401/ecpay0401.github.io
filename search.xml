@@ -235,7 +235,7 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
 <p>(4)貴司系統收到綠界回傳結果，是否有正確回應1|OK</p>
 <p>(5)因資安政策規定綠界僅提供443 PORT且需使用合法的DomainName進行設定</p>
 <p>上述原因確認完畢，仍然無法排除此問題請提供以下資訊</p>
-<p>並Email至<a href="mailto:&#116;&#x65;&#x63;&#x68;&#x73;&#117;&#x70;&#112;&#x6f;&#114;&#x74;&#64;&#x65;&#99;&#112;&#97;&#x79;&#x2e;&#99;&#x6f;&#109;&#46;&#116;&#119;">&#116;&#x65;&#x63;&#x68;&#x73;&#117;&#x70;&#112;&#x6f;&#114;&#x74;&#64;&#x65;&#99;&#112;&#97;&#x79;&#x2e;&#99;&#x6f;&#109;&#46;&#116;&#119;</a></p>
+<p>並Email至<a href="mailto:&#x74;&#101;&#99;&#104;&#115;&#117;&#x70;&#112;&#x6f;&#114;&#x74;&#64;&#x65;&#99;&#112;&#97;&#121;&#46;&#99;&#111;&#x6d;&#46;&#x74;&#119;">&#x74;&#101;&#99;&#104;&#115;&#117;&#x70;&#112;&#x6f;&#114;&#x74;&#64;&#x65;&#99;&#112;&#97;&#121;&#46;&#99;&#111;&#x6d;&#46;&#x74;&#119;</a></p>
 <p>(1)商店代號(MerchantID)</p>
 <p>(2)廠商交易編號(MerchantTradeNo)</p>
 <p>(3)交易日期(MerchantTradeDate)</p>
@@ -292,6 +292,48 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
       </categories>
       <tags>
         <tag>綠界帳戶餘額低於退刷金額或為負數導致無法退刷及建立物流訂單</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>綠界-金流-錯誤代碼:10200141商店未開啟收款服務</title>
+    <url>/author_name/d7e66db/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>金流:商店未開啟收款服務原因<br>1.請確認您的API網址，</p>
+<p>若為<a href="https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut/V5">https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut/V5</a></p>
+<p>表示在測試環境，需使用測試環境的 MerchantID、HashIV、HashKey</p>
+<p>MerchantID應填入 2000132</p>
+<p>HashKey必須為5294y06JbISpM5x9</p>
+<p>HashIV必須為v77hoKGq4kWxNNIS</p>
+<p><img src="https://www.ecpay.com.tw/Upload/Announce/201911/images/729ca20191122092010.PNG"></p>
+<p>2.若為正式環境 API網址為<a href="https://payment.ecpay.com.tw/Cashier/AioCheckOut/V5">https://payment.ecpay.com.tw/Cashier/AioCheckOut/V5</a></p>
+<p>還是出現此錯誤訊息則表示未完成金流服務申請，需與客服中心聯繫</p>
+<p>3.若服務申請皆已通過且API網址已調為正式環境，出現以下訊息</p>
+<p><img src="https://www.ecpay.com.tw/Upload/Announce/201911/images/52b8b20191122092331.PNG"></p>
+<p>請確認使用的MerchantID是否為正式，正式資料查詢請參考MerchantID及HashKey、HashIV的取得</p>
+<p>Why receiving this error: “Message code: 10200141”?</p>
+<p>If you call ECPay’s payment API (“…/Cashier/AioCheckOut/V5”) and find an error says “訊息代碼 Message code：10200141</p>
+<p>訊息說明 Note for message：商店尚未提供任何付款方式，請聯繫商店處理。”, following are the reason why and how you can solve this problem.</p>
+<ol>
+<li>If the API URL you called is on ECPay’s stage environment (i.e. testing mode, with an “-stage “ in the URL) but you use the MerchantID, HashKey and HashIV of production environment (live mode).  </li>
+</ol>
+<p>→This is due to that the environment (i.e. the API URL) is not complied with the MerchantID and its pair of HashKey and HashIV.</p>
+<p>In this case, firstly, please check your API URL. If the API URL has “-stage”, you should use the testing MerchantID and its pair of HashKey and HashIV (i.e. MerchantID=2000132, HashKey= 5294y06JbISpM5x9 and HashIV= v77hoKGq4kWxNNIS).</p>
+<ol start="2">
+<li>If the MerchantID and its pair of HashKey and HashIV you used are for production and you already also confirm that the API URL has no “-stage” (i.e. the live mode), but this error code happened still.</li>
+</ol>
+<p>→This is due to that you (as a merchant) have not yet completed the application of payment service to ECPay. In this case, please contact ECPay’s customer service center to check the application status.</p>
+<ol start="3">
+<li>If you already confirm the above and call the API but another error shows: “訊息代碼 Message code：10200094</li>
+</ol>
+<p>訊息說明 Note for message：請檢查是否於正式環境誤用測試環境之MerchantID”</p>
+<p>→This is due to that you call the API of production environment (live mode) but incorrectly use the MerchantID, HashKey and HashIV of stage environment (testing mode). In this case please check your MerchantID, HashKey, and HashIV. To retrieve it, </p>
+<p>please see this FAQ: How can I know my MerchantID, HashKey, and HashIV through ECPay’s admin (panel)?</p>
+<p><a href="https://www.ecpay.com.tw/CascadeFAQ/CascadeFAQ_Qa?nID=1179">https://www.ecpay.com.tw/CascadeFAQ/CascadeFAQ_Qa?nID=1179</a></p>
+]]></content>
+      <categories>
+        <category>金流</category>
+      </categories>
+      <tags>
+        <tag>錯誤代碼10200141商店未開啟收款服務</tag>
       </tags>
   </entry>
   <entry>
