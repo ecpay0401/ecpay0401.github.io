@@ -235,7 +235,7 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
 <p>(4)貴司系統收到綠界回傳結果，是否有正確回應1|OK</p>
 <p>(5)因資安政策規定綠界僅提供443 PORT且需使用合法的DomainName進行設定</p>
 <p>上述原因確認完畢，仍然無法排除此問題請提供以下資訊</p>
-<p>並Email至<a href="mailto:&#x74;&#101;&#99;&#104;&#115;&#117;&#x70;&#112;&#x6f;&#114;&#x74;&#64;&#x65;&#99;&#112;&#97;&#121;&#46;&#99;&#111;&#x6d;&#46;&#x74;&#119;">&#x74;&#101;&#99;&#104;&#115;&#117;&#x70;&#112;&#x6f;&#114;&#x74;&#64;&#x65;&#99;&#112;&#97;&#121;&#46;&#99;&#111;&#x6d;&#46;&#x74;&#119;</a></p>
+<p>並Email至<a href="mailto:&#x74;&#101;&#x63;&#104;&#115;&#117;&#x70;&#x70;&#x6f;&#x72;&#116;&#x40;&#101;&#x63;&#112;&#x61;&#x79;&#46;&#99;&#111;&#x6d;&#46;&#116;&#119;">&#x74;&#101;&#x63;&#104;&#115;&#117;&#x70;&#x70;&#x6f;&#x72;&#116;&#x40;&#101;&#x63;&#112;&#x61;&#x79;&#46;&#99;&#111;&#x6d;&#46;&#116;&#119;</a></p>
 <p>(1)商店代號(MerchantID)</p>
 <p>(2)廠商交易編號(MerchantTradeNo)</p>
 <p>(3)交易日期(MerchantTradeDate)</p>
@@ -398,5 +398,30 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
       <categories>
         <category>電子發票</category>
       </categories>
+  </entry>
+  <entry>
+    <title>綠界-電子發票服務優化2021/8/24(二)</title>
+    <url>/author_name/ae262f6c/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>因應電子發票服務優化，綠界將於2021/8/24(二)調整系統架構，調整後主機 IP 將會不固定。</p>
+<p>To enhance ECPay’s E-invoice services, from 2021/08/24th (Tue.) ECPay will change the server IP from static to dynamic.  </p>
+<p>Please notice: </p>
+<p>1.如您是使用綠界廠商管理後台開立發票，請忽略本通知。</p>
+<p>If you are using ECPay’s admin portal to issue/create the e-invoice, please ignore this notification.</p>
+<p>2.如貴司原本防火牆沒有鎖定綠界 IP，也請忽略本通知。</p>
+<p>If your firewall never set the ECPay’s IP in the access list of firewall policy, please ignore this notification as well.</p>
+<p>3.如貴司防火牆需設定開通綠界 IP，請改以 FQDN(Fully Qualified Domain Name)方式鎖定</p>
+<p>If your firewall needs to set ECPay’s IP into the access list of firewall policy, please set it in the way of FQDN (fully qualified domain name.)  </p>
+<p>允許連出(Allow outbound connection)：</p>
+<p>einvoice.ecpay.com.tw TCP 443、einvoice-stage.ecpay.com.tw TCP 443</p>
+<p>允許連入(Allow inbound connection)：</p>
+<p>postgate.ecpay.com.tw TCP 443、postgate-stage.ecpay.com.tw TCP 443</p>
+<p>若您的主機是使用托管方式，請將此訊息轉知主機商。</p>
+]]></content>
+      <categories>
+        <category>電子發票</category>
+      </categories>
+      <tags>
+        <tag>電子發票服務優化</tag>
+      </tags>
   </entry>
 </search>
