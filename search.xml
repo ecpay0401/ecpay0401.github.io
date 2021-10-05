@@ -235,7 +235,7 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
 <p>(4)貴司系統收到綠界回傳結果，是否有正確回應1|OK</p>
 <p>(5)因資安政策規定綠界僅提供443 PORT且需使用合法的DomainName進行設定</p>
 <p>上述原因確認完畢，仍然無法排除此問題請提供以下資訊</p>
-<p>並Email至<a href="mailto:&#x74;&#101;&#x63;&#104;&#115;&#117;&#x70;&#x70;&#x6f;&#x72;&#116;&#x40;&#101;&#x63;&#112;&#x61;&#x79;&#46;&#99;&#111;&#x6d;&#46;&#116;&#119;">&#x74;&#101;&#x63;&#104;&#115;&#117;&#x70;&#x70;&#x6f;&#x72;&#116;&#x40;&#101;&#x63;&#112;&#x61;&#x79;&#46;&#99;&#111;&#x6d;&#46;&#116;&#119;</a></p>
+<p>並Email至<a href="mailto:&#116;&#101;&#99;&#104;&#x73;&#x75;&#112;&#x70;&#x6f;&#x72;&#x74;&#64;&#x65;&#99;&#112;&#97;&#x79;&#46;&#99;&#111;&#109;&#x2e;&#116;&#119;">&#116;&#101;&#99;&#104;&#x73;&#x75;&#112;&#x70;&#x6f;&#x72;&#x74;&#64;&#x65;&#99;&#112;&#97;&#x79;&#46;&#99;&#111;&#109;&#x2e;&#116;&#119;</a></p>
 <p>(1)商店代號(MerchantID)</p>
 <p>(2)廠商交易編號(MerchantTradeNo)</p>
 <p>(3)交易日期(MerchantTradeDate)</p>
@@ -367,6 +367,35 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
       <categories>
         <category>電子發票</category>
       </categories>
+  </entry>
+  <entry>
+    <title>綠界-電子發票-我適合哪種開立發票方式?</title>
+    <url>/author_name/1b27490b/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>主要開立對象為一般消費者（Business to Customer）或營業人</p>
+<p>B2C 存證發票</p>
+<p>如為一般消費者，不需要輸入買方統編，可列印出來交付給買受人，或是將發票資料存入載具。</p>
+<p>如為營業人，開立時需輸入買方統編，可以不用列印紙本發票，只要透過ECPAY電子郵件寄送電子發票證</p>
+<p>明聯檔案給買方公司即可。</p>
+<p>主要開立對象為營業人（Business to Business）或政府機關、財團法人</p>
+<p>B2B 存證發票</p>
+<p>開立發票時輸入買方統編，可以不用列印紙本發票，只要透過ECPAY電子郵件寄送電子發票證明聯檔案給買方公司即可。</p>
+<p>B2B 交換發票 </p>
+<p>開立發票時需要雙方進行確認，僅資料交換。</p>
+<p>營業人A開立電子發票給營業人B，營業人B必須接收與檢視發票內容並做確認或退回。</p>
+<p>比較表:</p>
+<p><img src="https://img.onl/S0BDx"></p>
+<p>Q:電子發票可以開三聯式發票(B2B)嗎?</p>
+<p>A:可以，傳統的三聯式發票會多一聯存根聯，以利同為營業人的買方做為存根之用。</p>
+<p>而電子發票若買方同為營業人，則可以電子形式傳送發票資料檔，供買方營業人後續申報營業稅扣抵之用。</p>
+<p>Q:可以串接一個規格(API)同時開立B2C和有統一編號(B2B)發票嗎?</p>
+<p>A:可以,若您的主要開立對象B2C大於B2B建議參考電子發票規格書 ，當統一編號(CustomerIdentifier)有值時即為B2B發票</p>
+]]></content>
+      <categories>
+        <category>電子發票</category>
+      </categories>
+      <tags>
+        <tag>我適合哪種開立發票方式?</tag>
+      </tags>
   </entry>
   <entry>
     <title>綠界 電子發票-檢查碼版和JSON版API差異</title>
